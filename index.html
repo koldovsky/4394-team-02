@@ -24,6 +24,7 @@
         data-hx-get="global.header-nav.partial.html"
       ></nav>
     </header>
+
     <main class="main">
       <section class="traditional-wine">
         <div
@@ -31,6 +32,15 @@
           data-hx-swap="outerHTML"
           data-hx-get="index.traditional-wine.partial.html"
         ></div>
+
+        <!--  15(FAQ) Osadchuk  -->
+        <section class="faq">
+          <div
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.faq.partial.html"
+          ></div>
+        </section>
       </section>
     </main>
     <footer class="footer"></footer>
