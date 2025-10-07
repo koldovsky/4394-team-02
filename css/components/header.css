@@ -15,13 +15,14 @@
     color: #c8693a;
     margin-right: 15px;
     border: 1px solid #c8693a;
-    padding: 2px;
+    padding: 3px;
+    transition: all 0.4s;
 }
 .header .header__icon svg:hover {
-    width: 24px;
-    height: 24px;
     background-color: #c8693a;
     fill: black;
+   stroke-linejoin: black;
+   transition: all 0.4s;
 }
  
 
