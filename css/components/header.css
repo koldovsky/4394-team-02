@@ -18,6 +18,8 @@
     padding: 2px;
 }
 .header .header__icon svg:hover {
+    width: 24px;
+    height: 24px;
     background-color: #c8693a;
     fill: black;
 }
