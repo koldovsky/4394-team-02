@@ -47,11 +47,16 @@
       </section>
     </main>
     <footer class="footer">
-      <nav
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.footer-forma.partial.html"
+      ></div>
+      <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.footer-nav.partial.html"
-      ></nav>
+      ></div>
     </footer>
   </body>
 </html>
