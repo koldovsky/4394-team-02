@@ -1,12 +1,12 @@
 /* Include basic */
-@import url('vars.css');
-@import url('reboot.min.css');
+@import url("vars.css");
+@import url("reboot.min.css");
 
 /* Include components */
-@import url('components/header.css');
-
+@import url("components/header.css");
 
 /* Important style */
 .container {
-    
+	max-width: 1170px;
+	margin: 0 auto;
 }
