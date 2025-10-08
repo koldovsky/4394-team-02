@@ -36,4 +36,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Smetana Andriy
 - Iryna Perepichka
 - Renata Panych
-- Volodymyr Potaychuk2
+- Volodymyr Potaychuk
