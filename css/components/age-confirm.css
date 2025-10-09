@@ -40,7 +40,7 @@
         color: white;
         border: none;
         padding: 0.8rem 1.5rem;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         font-weight: bold;
         cursor: pointer;
       }
@@ -50,7 +50,7 @@
         color: #c16834;
         border: 1px solid #c16834;
         padding: 0.8rem 1.5rem;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         font-weight: bold;
         cursor: pointer;
       }
