@@ -12,5 +12,12 @@
    text-align: center;
 }
 .awards-ornament {
+    display: block;
+    margin: 0 auto;
+}
+.awards-title {
+    color: black;
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
     text-align: center;
 }
