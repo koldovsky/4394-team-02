@@ -13,7 +13,7 @@
 }
 .awards-ornament {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .awards-title {
     color: black;
@@ -28,4 +28,16 @@
     text-align: center;
     margin-top: 50px;
     gap: 20px;
+}
+.year {
+    font-family: Prata, serif;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+.awards-text {
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    color: grey;
+    text-align: left;
 }
