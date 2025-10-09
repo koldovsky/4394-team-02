@@ -4,6 +4,7 @@
 
 /* Include components */
 @import url("components/header.css");
+@import url("components/age-confirm.css");
 
 /* Important style */
 .container {
