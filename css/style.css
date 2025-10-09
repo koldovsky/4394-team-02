@@ -5,6 +5,8 @@
 /* Include components */
 @import url("components/header.css");
 @import url("components/age-confirm.css");
+@import url("components/award-wines.css");
+
 
 /* Important style */
 .container {
