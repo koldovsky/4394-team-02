@@ -22,9 +22,10 @@
     text-align: center;
 }
 .awards-content {
-    color: black;
-    font-family: Rubik, sans-serif;
-    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 3fr;
+    align-items: start;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    gap: 20px;
 }
