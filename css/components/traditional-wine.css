@@ -48,7 +48,7 @@
 .traditional-wine__vine {
   display: block;
   margin: 0 auto 25px;
-  width: 100px;
+  width: 380px;
 }
 
 .traditional-wine__description {
@@ -58,7 +58,7 @@
   margin-bottom: 40px;
 }
 
-/* Списки вина (вертикально, не поруч) */
+/* Списки вина */
 .traditional-wine__lists {
   display: flex;
   flex-direction: column;
