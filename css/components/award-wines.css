@@ -1,0 +1,43 @@
+.awards {
+    color: #c8693a;
+    font-style: italic;
+    font-family: 'Great Vibes', undefined;
+    font-size: 28px;
+    text-align: center;
+}
+.awards-wines__title {
+   color: black;
+   font-family: Prata, serif; 
+   font-size: 48px;
+   text-align: center;
+}
+.awards-ornament {
+    display: block;
+    margin: 20px auto;
+}
+.awards-title {
+    color: black;
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.awards-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 3fr;
+    align-items: start;
+    text-align: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+.year {
+    font-family: Prata, serif;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+.awards-text {
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    color: grey;
+    text-align: left;
+}

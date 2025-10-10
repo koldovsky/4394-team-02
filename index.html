@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +20,11 @@
     ></script>
   </head>
   <body>
+<!--     <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.age-confirm.pratitial.html"
+    ></section> -->
     <header class="header">
       <nav
         data-hx-trigger="load"
@@ -29,22 +34,39 @@
     </header>
 
     <main class="main">
-      <section class="traditional-wine">
-        <div
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.traditional-wine.partial.html"
-        ></div>
-
-        <!--  15(FAQ) Osadchuk  -->
-        <section class="faq">
-          <div
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.faq.partial.html"
-          ></div>
-        </section>
-      </section>
+      <section
+        class="traditional-wine"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.traditional-wine.partial.html"
+      ></section>
+            <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.video-history.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wine-categories.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.promo-discounts.partial.html"
+      ></section>
+      <section
+        class="awards-wines"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.awards-wines.partial.html"
+      ></section>
+      <section
+        class="faq"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.faq.partial.html"
+      ></section>
     </main>
     <footer class="footer">
       <div
