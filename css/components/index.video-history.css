@@ -1,0 +1,16 @@
+.history {
+    padding: 100px 0 100px 0;
+}
+
+.history__title {
+    color: rgb(200, 105, 58);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Great Vibes', undefined;
+}
+
+.history__subtitle {
+    color: white;
+    font-size: 58px;
+    font-family: Prata, serif;
+}
