@@ -8,6 +8,10 @@
 @import url("components/award-wines.css");
 
 
+@import url("index.video-history.css");
+@import url("index.promo-discounts.css");
+@import url("index.wine-categories.css");
+
 /* Important style */
 .container {
 	max-width: 1170px;
