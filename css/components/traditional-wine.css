@@ -1,103 +1,99 @@
-/* ======= Traditional Wine Section – Сметана Андрій ======= */
-
+/* === Секція №8 Traditional Wine – Сметана Андрій === */
 #traditional-wine {
-  position: relative;
-  background-image: url("img\wine-categories\white_wine_background.jpg"); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../img/white_wine_background.jpg") no-repeat center/cover;
   color: #fff;
-  padding: 100px 20px;
+  padding: 100px 0;
+  position: relative;
 }
 
+/* Основний контейнер */
 .traditional-wine__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1300px;
+  gap: 60px;
+  max-width: 1200px;
   margin: 0 auto;
-  gap: 40px;
+  padding: 0 20px;
 }
 
-
+/* Ліва частина – зображення (фон видно зліва) */
 .traditional-wine__image {
   flex: 1;
-  min-height: 500px;
+  min-height: 600px;
 }
 
-
+/* Контент справа */
 .traditional-wine__content {
   flex: 1;
-  max-width: 550px;
+  max-width: 500px;
+  color: #fff;
 }
 
 .traditional-wine__subtitle {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
   font-style: italic;
-  color: #c77846;
-  font-size: 20px;
+  color: #c47a40;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .traditional-wine__title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-size: 46px;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .traditional-wine__vine {
   display: block;
-  margin: 20px 0;
-  width: 80px;
-  height: auto;
+  margin: 0 auto 25px;
+  width: 100px;
 }
 
 .traditional-wine__description {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #ddd;
+  color: #e5e5e5;
+  margin-bottom: 40px;
 }
 
+/* Списки вина (вертикально, не поруч) */
 .traditional-wine__lists {
   display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .traditional-wine__list-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
   font-size: 22px;
-  margin-bottom: 10px;
-  color: #fff;
+  margin-bottom: 15px;
 }
 
 .traditional-wine__list ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .traditional-wine__list li {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  color: #ccc;
-  margin-bottom: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #d6c7be;
+  margin-bottom: 8px;
   position: relative;
-  padding-left: 12px;
+  padding-left: 15px;
 }
 
 .traditional-wine__list li::before {
   content: "–";
+  color: #c47a40;
   position: absolute;
   left: 0;
-  color: #c77846;
 }
 
-/* ======= Адаптив ======= */
-
+/* Адаптивність */
 @media (max-width: 992px) {
   .traditional-wine__container {
     flex-direction: column;
@@ -108,17 +104,16 @@
     max-width: 100%;
   }
 
+  .traditional-wine__lists {
+    align-items: center;
+  }
+
   .traditional-wine__vine {
     margin: 20px auto;
   }
-
-  .traditional-wine__lists {
-    justify-content: center;
-    gap: 40px;
-  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   #traditional-wine {
     padding: 60px 15px;
     background-position: center top;
@@ -128,11 +123,11 @@
     font-size: 32px;
   }
 
-  .traditional-wine__subtitle {
-    font-size: 18px;
+  .traditional-wine__description {
+    font-size: 14px;
   }
 
-  .traditional-wine__description {
+  .traditional-wine__list li {
     font-size: 14px;
   }
 }
