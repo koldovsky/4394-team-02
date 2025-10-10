@@ -42,10 +42,10 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 
 
 ##FAQ CSS Files in Project
-*CSS/
-    */components/ ( Тут складаємо CSS файли секцій. Назва файлів global/index.section-name.css)
-            */index.traditional-wine.css
-            */index.promo-discounts.css
-    */vars.css ( сюди зберемо увесь перевикористаний CSS)
-    */style.css ( ось тут тількі імпорти інших CSS. Приклад імпорту @import url("components/index.video-history.css");)
-    */reboot.min.css - файл нормалізації стилів
+* CSS/
+    * /components/ ( Тут складаємо CSS файли секцій. Назва файлів global/index.section-name.css)
+            * /index.traditional-wine.css
+            * /index.promo-discounts.css
+    * /vars.css ( сюди зберемо увесь перевикористаний CSS)
+    * /style.css ( ось тут тількі імпорти інших CSS. Приклад імпорту @import url("components/index.video-history.css");)
+    * /reboot.min.css - файл нормалізації стилів
