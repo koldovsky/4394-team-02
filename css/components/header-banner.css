@@ -1,0 +1,84 @@
+.header-banner-background{
+    background-image: url("https://res2.weblium.site/res/60115ce126eea30022ce1a18/6021f6bb4647900021482634");
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    height: 100%;                 
+    
+    /* ====== текст ====== */
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* по Y */
+    padding-right: 10%;
+    box-sizing: border-box;
+    text-align: left;  
+}
+
+.taste{
+    color: #bb600a;
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'Great Vibes', cursive;
+}
+.info-text h1{
+    color: aliceblue;
+    font-size: 60px;
+    margin: 25px left  25px;
+    display: block; 
+}
+.info-text img{
+    width: 175px;
+    height: 40px;
+    display: block; 
+    margin: 15px left  10px;
+}
+.info-text span{
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.info-text{
+    
+}
+
+.header-banner-button{
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.button{
+    text-decoration: none;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 30px;
+}
+.shop{
+    color: aliceblue;
+    background-color: #d66f0e;
+    border: 2px solid #d66f0e; /* щоб кнопки були однакові по висоті */
+}
+.learn{
+ 
+    color: white;
+    border: 2px solid white;
+}
+
+.shop:hover{
+    color: aliceblue;
+    background-color: #bb600a;
+    border: 2px solid #bb600a;
+    text-decoration: none;
+}
+.learn:hover{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+
+    text-decoration: none;
+}
+
