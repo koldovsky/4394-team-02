@@ -1,0 +1,55 @@
+# 💻 OS-specific junk
+.DS_Store
+Thumbs.db
+
+# 🔧 IDEs
+.vscode/
+.idea/
+
+# 🧪 Test coverage
+coverage/
+*.lcov
+
+# 📦 Dependency folders
+node_modules/
+
+# 🧹 Logs and temp files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Web-related builds
+dist/
+build/
+
+# Optional: env/secret configs
+.env
+.env.*
+
+# 🖼 Кэш и минифицированные версии
+.cache/
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+
+# 🔥 Backup files
+*~
+*.old
+*.orig
+
+# 👀 Браузерная кэш-папка
+.cache/
+
+# 🔄 Версионные конфликтные файлы
+*.rej
+*.orig
+
+# 💅 Prettier/ESLint cache
+.prettier-cache/
+.eslintcache
