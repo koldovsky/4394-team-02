@@ -27,7 +27,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 ```html
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
-##team 
+## team 
 
 - Volodumur Yatsenko
 - Serafym Romanchenko
@@ -41,11 +41,25 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Oleh Vlasyuk
 
 
-##FAQ CSS Files in Project
-* CSS/
+## FAQ CSS Files in Project
+* css/
     * /components/ ( Тут складаємо CSS файли секцій. Назва файлів global/index.section-name.css)
             * /index.traditional-wine.css
             * /index.promo-discounts.css
     * /vars.css ( сюди зберемо увесь перевикористаний CSS)
     * /style.css ( ось тут тількі імпорти інших CSS. Приклад імпорту @import url("components/index.video-history.css");)
     * /reboot.min.css - файл нормалізації стилів
+
+## FAQ Image Files in Project
+* img/
+    * /pratitial-img/
+        * /global.index.section-name/ (медиа используемые только в секции)
+    * /global-assets/ (все повторяющиеся медиа элементы)
+    * /social/
+        * /icons/(папка иконками  социальных сетей )
+        * /instagram/ (Блок инсты. full img для галереи и превью для футера)
+    * /blog/
+        * date/ ( изображения блог-постов , так же идут и в single-page поста. Превью и full img)
+    * /shop/
+        * /products/ (изображения товаров, т.к. они повторяются и идут потом на страницу товара, корзину и подтверждение. Full-img и кадрированные)
+        * /icons/ (иконки связанные с корзиной, магазином, доставкой и т.д.)
