@@ -3,7 +3,7 @@ name: FTP Deploy to h1.com.ua
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   ftp-deploy:
@@ -20,4 +20,5 @@ jobs:
           server: ${{ secrets.FTP_HOST_H1 }}
           username: ${{ secrets.FTP_USERNAME_H1 }}
           password: ${{ secrets.FTP_PASSWORD_H1 }}
-          local-dir: ./ 
+          local-dir: ./
+          protocol: ftp
