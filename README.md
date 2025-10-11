@@ -13,8 +13,8 @@
 | 9   | Maksym Pinder       |                                                                              | [GitHub Profile Link](https://github.com/PinderMaksim)    |
 | 10  | Oleh Vlasyuk        |                                                                              | [GitHub Profile Link](https://github.com/Oleh-323)        |
 | 11  | Shapovalova Yuliia  | [Personal Project](https://github.com/julishapovalova/html-web-project)      | [GitHub Profile Link](https://github.com/julishapovalova) |
-| 14 | Hladun Pavlo         |                             |                                                |
-[GitHub Profile Link](https://github.com/HladunPavlo)     |
+| 12  | Hladun Pavlo        |                                                                              | [GitHub Profile Link](https://github.com/HladunPavlo)     |
+
 ---
 
 ## FAQ CSS Files in Project
