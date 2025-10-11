@@ -1,6 +1,7 @@
 .awards-wine {
-    background-color: #261e1c;
+    background: #261e1c;
     padding: 0 5px;
+   
 }
 .awards {
     color: #c8693a;
@@ -33,7 +34,7 @@
      img {
         width: 138px;
         height: auto;
-        padding: 0 5px;
+        padding: auto 5px;
     }
     @media (max-width: 600px) {
      img {
