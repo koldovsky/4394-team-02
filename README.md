@@ -14,7 +14,7 @@
 | 10  | Oleh Vlasyuk        |                                                                              | [GitHub Profile Link](https://github.com/Oleh-323)        |
 | 11  | Shapovalova Yuliia  | [Personal Project](https://github.com/julishapovalova/html-web-project)      | [GitHub Profile Link](https://github.com/julishapovalova) |
 | 12  | Hladun Pavlo        |                                                                              | [GitHub Profile Link](https://github.com/HladunPavlo)     |
-| 13  | Trush Ivan          |                                                                              | [GitHub Profile Link](https://github.com/TrushIvan)       |
+| 13  | Trush Ivan          | [Personal Project](https://github.com/RenataPanych/project)                  | [GitHub Profile Link](https://github.com/TrushIvan)       |
 
 ---
 
