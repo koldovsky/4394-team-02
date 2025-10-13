@@ -37,3 +37,8 @@ font-size: 18px;
     font-size: 16px;
     line-height: 25.6px;
 }
+.wines-blog__post-title {
+    font-weight: 400;
+    line-height: 33px;
+     font-size: 22px;
+}
