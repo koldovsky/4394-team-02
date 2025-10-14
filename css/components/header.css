@@ -6,6 +6,7 @@
 	height: 104px;
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 0 20px;
+	z-index: 100;
 }
 
 .header__nav {
@@ -144,9 +145,10 @@
 		height: 100vh;
 		background-color: var(--craft-bg-color);
 		transition: all 0.5s;
+		z-index: 100;
 	}
 	.menu {
-
+		z-index: 100;
 		flex-direction: column;
 	}
 	.header__menu.active {
