@@ -1,6 +1,6 @@
 .craft-wines {
   background-color: var(--craft-bg-color);
-  padding: 100px 0;
+  padding: 60px 0;
   text-align: center;
   color: var(--craft-text-color);
   font-family: "Poppins", sans-serif;
@@ -13,15 +13,15 @@
 }
 
 .craft-wines-subtitle {
-  font-family: "Great Vibes", undefined;
-  font-size: 28px;
+  font-family: "Great Vibes", cursive;
+  font-size: 24px;
   color: var(--craft-accent-color);
   margin-bottom: 10px;
 }
 
 .craft-wines-title {
   font-family: 'Prata', serif;
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -32,15 +32,15 @@
 }
 
 .craft-wines-text {
-  font-family:'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: var(--craft-text-color);
-  font-size: 16px;
-  margin-bottom: 60px;
+  font-size: 15px;
+  margin-bottom: 40px;
 }
 
 .craft-wines-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 40px;
   justify-items: center;
 }
@@ -73,7 +73,7 @@
   background-color: var(--craft-accent-color);
   color: var(--craft-text-color);
   border: none;
-  padding: 10px 24px;
+  padding: 10px 20px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -81,4 +81,29 @@
 
 .craft-wines-btn:hover {
   background-color: var(--craft-accent-hover-color);
+}
+
+/* --- Desktop --- */
+@media (min-width: 1025px) {
+  .craft-wines {
+    padding: 100px 0;
+  }
+
+  .craft-wines-title {
+    font-size: 48px;
+  }
+
+  .craft-wines-text {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  .craft-wines-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .craft-wines-btn {
+    padding: 10px 24px;
+  }
 }
