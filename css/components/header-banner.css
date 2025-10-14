@@ -2,8 +2,7 @@
     background-image: url("https://res2.weblium.site/res/60115ce126eea30022ce1a18/6021f6bb4647900021482634");
     background-size: cover;
     background-position: left;
-    background-attachment: fixed;
-                   
+    background-attachment: fixed;        
     
     /* ====== текст ====== */
 
@@ -13,6 +12,7 @@
     padding-right: 10%;
     box-sizing: border-box;
     text-align: left;  
+    z-index: -1;
 }
 
 .taste{
