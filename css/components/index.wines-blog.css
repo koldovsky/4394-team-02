@@ -1,0 +1,39 @@
+.wines-blog {
+background-color: #1c1412;
+padding: 100px 0;
+text-align: center;
+color: #fff;
+}
+.wines-blog__title {
+    font-size: 21px;
+    color: rgb(200, 105, 58);
+    font-family: "Great Vibes", undefined;
+    font-weight: 400;
+}
+.wines-blog__subtitle {
+    font-size: 41px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+}
+.wines-blog__decor {
+    font-size: 16px;
+    max-width: 100%;
+}
+.wines-blog__description {
+font-size: 18px;
+}
+.wines-blog__image {
+    width: 287.725px;
+    max-width: 100%;
+}
+.wines-blog__title-link{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: "Prata", serif;
+    line-height: 33px;
+}
+.wines-blog__excerpt-link {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 25.6px;
+}
