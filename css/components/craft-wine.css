@@ -16,7 +16,7 @@
   font-family: 'Great Vibes', undefined;
   font-style: italic;
   font-size: 18px;
-  color: #c47a40;
+  color: #d66f0e;
   margin-bottom: 10px;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .craft-wines-btn {
-  background-color: #c47a40;
+  background-color: #d66f0e;
   color: #fff;
   border: none;
   padding: 10px 24px;
@@ -80,5 +80,5 @@
 }
 
 .craft-wines-btn:hover {
-  background-color: #c8693a;
+  background-color: #bb600a;
 }
