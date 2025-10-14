@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
 :root {
-    
+  --craft-bg-color: #261e1c;           /* Темний фон, базовий колір секції */
+  --craft-text-color: #ffffff;         /* Основний білий текст */
+  --craft-accent-color: #c8693a;       /* Помаранчевий акцент — колір кнопок і підзаголовків */
+  --craft-accent-hover-color: rgb(175, 87, 43); /* Темніший варіант акценту для hover-ефекту */
 }
