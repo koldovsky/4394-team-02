@@ -14,13 +14,13 @@
 
 .craft-wines-subtitle {
   font-family: "Great Vibes", cursive;
-  font-size: 24px;
+  font-size: 14px;
   color: var(--craft-accent-color);
   margin-bottom: 10px;
 }
 
 .craft-wines-title {
-  font-family: 'Prata', serif;
+  font-family: "Prata", serif;
   font-size: 34px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -32,9 +32,9 @@
 }
 
 .craft-wines-text {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: var(--craft-text-color);
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 40px;
 }
 
@@ -83,7 +83,6 @@
   background-color: var(--craft-accent-hover-color);
 }
 
-/* --- Desktop --- */
 @media (min-width: 1025px) {
   .craft-wines {
     padding: 100px 0;
