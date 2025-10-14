@@ -1,6 +1,6 @@
 /* === Секція №8 Traditional Wine – Сметана Андрій === */
 #traditional-wine {
-  background: url("/img/partials-img/traditional-wine/white_wine_background.jpg") no-repeat center/cover;
+  background: url("../../img/partials-img/traditional-wine/white_wine_background.jpg") no-repeat left center/cover;
   color: #fff;
   padding: 100px 0;
   position: relative;
@@ -17,13 +17,13 @@
   padding: 0 20px;
 }
 
-/* Ліва частина – зображення (фон видно зліва) */
+/* Ліва частина */
 .traditional-wine__image {
   flex: 1;
   min-height: 600px;
 }
 
-/* Контент справа */
+/* Контент */
 .traditional-wine__content {
   flex: 1;
   max-width: 500px;
@@ -93,38 +93,72 @@
   left: 0;
 }
 
-/* Адаптивність */
+/* ======== Адаптивність ======== */
 @media (max-width: 992px) {
   .traditional-wine__container {
     flex-direction: column;
     text-align: center;
+    gap: 40px;
+  }
+
+  .traditional-wine__image {
+    display: none; /* ховаємо фон-зображення */
   }
 
   .traditional-wine__content {
-    max-width: 100%;
-  }
-
-  .traditional-wine__lists {
-    align-items: center;
+    max-width: 90%;
   }
 
   .traditional-wine__vine {
     margin: 20px auto;
+    width: 220px; /* менша лоза */
+  }
+
+  .traditional-wine__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .traditional-wine__subtitle {
+    font-size: 16px;
+  }
+
+  .traditional-wine__description {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .traditional-wine__lists {
+    gap: 30px;
+  }
+
+  .traditional-wine__list-title {
+    font-size: 20px;
+  }
+
+  .traditional-wine__list li {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
   #traditional-wine {
-    padding: 60px 15px;
-    background-position: center top;
+    padding: 60px 20px;
+    background: #201412; 
   }
 
   .traditional-wine__title {
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  .traditional-wine__vine {
+    width: 180px;
+    margin: 15px auto;
   }
 
   .traditional-wine__description {
     font-size: 14px;
+    margin-bottom: 25px;
   }
 
   .traditional-wine__list li {
