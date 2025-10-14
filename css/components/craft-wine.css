@@ -1,8 +1,8 @@
 .craft-wines {
-  background-color: #1c1412;
+  background-color: var(--craft-bg-color);
   padding: 100px 0;
   text-align: center;
-  color: #fff;
+  color: var(--craft-text-color);
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,7 +16,7 @@
   font-family: 'Great Vibes', undefined;
   font-style: italic;
   font-size: 18px;
-  color: #d66f0e;
+  color: var(--craft-accent-color);
   margin-bottom: 10px;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .craft-wines-text {
-  color: #fff;
+  color: var(--craft-text-color);
   font-size: 16px;
   margin-bottom: 60px;
 }
@@ -59,19 +59,19 @@
 .craft-wines-name {
   font-size: 20px;
   font-weight: 500;
-  color: #fff;
+  color: var(--craft-text-color);
   margin-bottom: 8px;
 }
 
 .craft-wines-price {
-  color: #fff;
+  color: var(--craft-text-color);
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .craft-wines-btn {
-  background-color: #d66f0e;
-  color: #fff;
+  background-color: var(--craft-accent-color);
+  color: var(--craft-text-color);
   border: none;
   padding: 10px 24px;
   font-weight: 600;
@@ -80,5 +80,5 @@
 }
 
 .craft-wines-btn:hover {
-  background-color: #bb600a;
+  background-color: var(--craft-accent-hover-color);
 }
