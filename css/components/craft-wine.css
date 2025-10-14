@@ -20,7 +20,7 @@
 }
 
 .craft-wines-title {
-  font-family: "Playfair Display", serif;
+  font-family: 'Prata', serif;
   font-size: 46px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -32,6 +32,7 @@
 }
 
 .craft-wines-text {
+  font-family:'Rubik', sans-serif;
   color: var(--craft-text-color);
   font-size: 16px;
   margin-bottom: 60px;
