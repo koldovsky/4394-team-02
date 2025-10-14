@@ -13,9 +13,9 @@
 }
 
 .craft-wines-subtitle {
-  font-family: 'Great Vibes', undefined;
+  font-family: "Great Vibes", undefined;
   font-style: italic;
-  font-size: 18px;
+  font-size: 28px;
   color: var(--craft-accent-color);
   margin-bottom: 10px;
 }
