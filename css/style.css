@@ -16,7 +16,8 @@
 
 @import url("components/header-banner.css");
 
-@import url("components/global.popup-basket.css");
+@import url("components/index.popup-basket.css");
+@import url("components/index.popup-basket-empty.css");
 /* Important style */
 .container {
 	max-width: 1170px;
