@@ -8,7 +8,10 @@
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
@@ -21,25 +24,24 @@
     ></script>
   </head>
   <body>
-<!--     <section
+    <!--     <section
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="global.age-confirm.pratitial.html"
     ></section> -->
-    <header class="header">
-      <nav
+    <header class="header"
         data-hx-trigger="load"
-        data-hx-swap="outerHTML"
+        data-hx-swap="innerHTML"
         data-hx-get="global.header-nav.partial.html"
-      ></nav>
-    </header>
+    ></header>
 
+ 
     <main class="main">
       <section
-      class="header-banner"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.header-banner.html"
+        class="header-banner"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-banner.html"
       ></section>
       <section
         class="wine-types"
@@ -53,13 +55,13 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.traditional-wine.partial.html"
       ></section>
-        <section
+      <section
         class="craft-wines"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.craft-wines.partial.html"
       ></section>
-            <section
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.video-history.partial.html"
@@ -81,20 +83,26 @@
         data-hx-get="index.awards-wines.partial.html"
       ></section>
       <section
+        class="wine-blog"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wines-blog.partial.html"
+      ></section>
+      <section
         class="faq"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.faq.partial.html"
       ></section>
       <section
-      class="wines-blog"
+        class="popup-basket"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.wines-blog.partial.html"
-        ></section>
+        data-hx-get="global.popup-basket.html"
+      ></section>
     </main>
-    <!-- Perepichka Iryna -->
-    <footer class="footer">
+     Perepichka Iryna
+     <footer class="footer">
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -105,6 +113,8 @@
         data-hx-swap="outerHTML"
         data-hx-get="global.footer-nav.partial.html"
       ></div>
-    </footer>
+    </footer>  
+
+    <script src="js/main.js"></script>
   </body>
 </html>

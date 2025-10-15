@@ -1,8 +1,8 @@
 .craft-wines {
-  background-color: #1c1412;
-  padding: 100px 0;
+  background-color: var(--craft-bg-color);
+  padding: 60px 0;
   text-align: center;
-  color: #fff;
+  color: var(--craft-text-color);
   font-family: "Poppins", sans-serif;
 }
 
@@ -13,17 +13,16 @@
 }
 
 .craft-wines-subtitle {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 18px;
-  color: #c47a40;
+  font-family: "Great Vibes", cursive;
+  font-size: 14px;
+  color: var(--craft-accent-color);
   margin-bottom: 10px;
 }
 
 .craft-wines-title {
-  font-family: "Playfair Display", serif;
-  font-size: 46px;
-  font-weight: 600;
+  font-family: "Prata", serif;
+  font-size: 34px;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -33,14 +32,15 @@
 }
 
 .craft-wines-text {
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 60px;
+  font-family: "Rubik", sans-serif;
+  color: var(--craft-text-color);
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .craft-wines-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 40px;
   justify-items: center;
 }
@@ -59,26 +59,50 @@
 .craft-wines-name {
   font-size: 20px;
   font-weight: 500;
-  color: #fff;
+  color: var(--craft-text-color);
   margin-bottom: 8px;
 }
 
 .craft-wines-price {
-  color: #fff;
+  color: var(--craft-text-color);
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .craft-wines-btn {
-  background-color: #c47a40;
-  color: #fff;
+  background-color: var(--craft-accent-color);
+  color: var(--craft-text-color);
   border: none;
-  padding: 10px 24px;
+  padding: 10px 20px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .craft-wines-btn:hover {
-  background-color: #c8693a;
+  background-color: var(--craft-accent-hover-color);
+}
+
+@media (min-width: 1025px) {
+  .craft-wines {
+    padding: 100px 0;
+  }
+
+  .craft-wines-title {
+    font-size: 48px;
+  }
+
+  .craft-wines-text {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  .craft-wines-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .craft-wines-btn {
+    padding: 10px 24px;
+  }
 }

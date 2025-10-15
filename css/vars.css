@@ -2,5 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 :root {
-    
+    --craft-bg-color: #261e1c; /* Темний фон, базовий колір секції */
+    --craft-text-color: #ffffff; /* Основний білий текст */
+    --craft-accent-color: #c8693a; /* Помаранчевий акцент — колір кнопок і підзаголовків */
+    --craft-accent-hover-color: rgb(175, 87, 43); /* Темніший варіант акценту для hover-ефекту */
+    --ff-kumbh: "Kumbh+Sans", sans-serif;
+    --ff-inter: "Inter", sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
 }

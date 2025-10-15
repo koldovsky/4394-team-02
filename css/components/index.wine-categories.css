@@ -1,0 +1,71 @@
+.wine-categories {
+  background-color: var(--craft-bg-color);
+  padding: 60px 0 60px 0;
+
+  .wine-categories__list {
+    display: grid;
+    gap: 15px;
+    min-width: 272px;
+    min-height: 403px;
+    /* grid-template-columns: repeat(auto-fit, minmax(767px, 1fr)); */
+
+    @media (min-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wine-categories__item {
+      /* padding: 33px; */
+
+      .wine-red-category {
+        background-image: url("../../img/wine-categories/red-wine.jpeg");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+      }
+
+      .wine-white-category {
+        background-image: url("../../img/wine-categories/white-wine.jpeg");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+      }
+
+      .wine-categories__container {
+        padding: 20px;
+
+        .wine-categories__title {
+          font-size: 30px;
+          font-family: "Prata", serif;
+          font-weight: 400;
+          color: var(--craft-text-color);
+          text-transform: capitalize;
+          text-align: left;
+        }
+
+        .wine-categories__separator {
+          width: 10%;
+          height: 2px;
+          background-color: var(--craft-accent-color);
+          border: none;
+        }
+
+        .wine-categories__description {
+          font-family: Rubik, sans-serif;
+          font-size: 16px;
+          color: var(--craft-text-color);
+          text-align: left;
+        }
+
+        .wine-categories__link {
+          font-family: Rubik, sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          color: var(--craft-text-color);
+          background-color: var(--craft-accent-color);
+          text-decoration: none;
+          text-align: center;
+          margin: 10px;
+          padding: 16px 25px;
+        }
+      }
+    }
+  }
+}

@@ -7,17 +7,24 @@
 @import url("components/age-confirm.css");
 @import url("components/index.wine-types.css");
 @import url("components/award-wines.css");
-@import url("components/traditional-wine.css");
+@import url("components/index.traditional-wine.css");
 @import url("components/craft-wine.css");
 @import url("components/index.video-history.css");
 @import url("components/index.promo-discounts.css");
 @import url("components/index.wine-categories.css");
 @import url("components/index.wines-blog.css");
+@import url("components/index.faq.css");
 
 @import url("components/header-banner.css");
+@import url("components/under-age.css");
+@import url("components/global.popup-basket.css");
 
 /* Important style */
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
+}
+
+body {
+	font-family: var(--ff-inter);
 }
