@@ -3,7 +3,9 @@
     background-size: cover;
     background-position: left;
     background-attachment: fixed;        
-    
+    min-height: clamp(100vh, 55vw, 130vh);
+
+
     /* ====== текст ====== */
 
     display: flex;
@@ -15,15 +17,16 @@
     z-index: -1;
 }
 
+  
 .taste{
     color: #bb600a;
     font-weight: 500;
-    font-size: 35px;
+    font-size: clamp(45px, 2.5vw, 55px);
     font-family: 'Great Vibes', cursive;
 }
 .info-text h1{
     color: aliceblue;
-    font-size: 60px;
+    font-size: clamp(70px, 5vw, 120px);
     margin: 25px left  25px;
     display: block; 
 }
@@ -36,11 +39,12 @@
 .info-text span{
     color: aliceblue;
     font-weight: 600;
-    font-size: 25px;
+    font-size: clamp(35px, 1.5vw, 45px);
 }
 
 .info-text{
-    
+    max-width: 45%;
+    min-width: 350px;
 }
 
 .header-banner-button{
