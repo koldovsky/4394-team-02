@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+   
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -50,6 +52,11 @@
         data-hx-get="index.wine-types.partial.html"
       ></section>
       <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.best-deals.partial.html"
+      ></section>
+      <section
         class="traditional-wine"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -61,6 +68,7 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.craft-wines.partial.html"
       ></section>
+    
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -115,6 +123,12 @@
       ></div>
     </footer>  
 
-    <script src="js/main.js"></script>
+
+    
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+        <script src="js/main.js"></script>
   </body>
 </html>
