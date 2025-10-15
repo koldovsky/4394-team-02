@@ -1,0 +1,184 @@
+/* === Секція №8 Traditional Wine – Сметана Андрій === */
+
+/* ===== Змінні кольорів ===== */
+:root {
+  --text-color: #fff;
+  --accent-color: #c47a40;
+  --secondary-text: #e5e5e5;
+  --list-text: #d6c7be;
+  --background-dark: #201412;
+}
+
+/* ===== Базові стилі (Mobile First) ===== */
+#traditional-wine {
+  background: var(--background-dark);
+  color: var(--text-color);
+  padding: 60px 20px;
+  position: relative;
+}
+
+/* Основний контейнер */
+.traditional-wine__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Зображення */
+.traditional-wine__image {
+  display: none;
+}
+
+/* Контент */
+.traditional-wine__content {
+  max-width: 90%;
+}
+
+.traditional-wine__subtitle {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: var(--accent-color);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.traditional-wine__title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.traditional-wine__vine {
+  display: block;
+  margin: 15px auto;
+  width: 180px;
+}
+
+.traditional-wine__description {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--secondary-text);
+  margin-bottom: 25px;
+}
+
+/* Списки вина */
+.traditional-wine__lists {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.traditional-wine__list-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.traditional-wine__list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.traditional-wine__list li {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--list-text);
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.traditional-wine__list li::before {
+  content: "–";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+/* ===== Планшет (min-width: 480px) ===== */
+@media (min-width: 480px) {
+  #traditional-wine {
+    padding: 80px 40px;
+  }
+
+  .traditional-wine__title {
+    font-size: 36px;
+  }
+
+  .traditional-wine__vine {
+    width: 220px;
+  }
+
+  .traditional-wine__description {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .traditional-wine__list li {
+    font-size: 15px;
+  }
+}
+
+/* ===== Десктоп (min-width: 992px) ===== */
+@media (min-width: 992px) {
+  #traditional-wine {
+    background: url("../../img/partials-img/traditional-wine/white_wine_background.jpg") no-repeat left center/cover;
+    padding: 100px 0;
+  }
+
+  .traditional-wine__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 60px;
+    padding: 0 20px;
+  }
+
+  .traditional-wine__image {
+    display: block;
+    flex: 1;
+    min-height: 600px;
+  }
+
+  .traditional-wine__content {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .traditional-wine__subtitle {
+    font-size: 18px;
+  }
+
+  .traditional-wine__title {
+    font-size: 46px;
+    margin-bottom: 30px;
+  }
+
+  .traditional-wine__vine {
+    width: 380px;
+    margin: 0 auto 25px;
+  }
+
+  .traditional-wine__description {
+    font-size: 16px;
+  }
+
+  .traditional-wine__lists {
+    gap: 40px;
+  }
+
+  .traditional-wine__list-title {
+    font-size: 22px;
+  }
+
+  .traditional-wine__list li {
+    font-size: 16px;
+  }
+}
