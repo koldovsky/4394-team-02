@@ -4,6 +4,7 @@
 
 /* Include components */
 @import url("components/header.css");
+@import url("components/footer.css");
 @import url("components/age-confirm.css");
 @import url("components/index.wine-types.css");
 @import url("components/award-wines.css");
@@ -15,10 +16,11 @@
 @import url("components/index.wines-blog.css");
 @import url("components/index.faq.css");
 @import url('components/slider-wines.css');
-
+@import url("components/index.footer-form.css");
 @import url("components/header-banner.css");
 @import url("components/under-age.css");
 @import url("components/global.popup-basket.css");
+
 
 @import url("components/index.popup-basket.css");
 @import url("components/index.popup-basket-empty.css");
