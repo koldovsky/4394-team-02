@@ -1,0 +1,67 @@
+.wine-types {
+  padding: 40px 20px 40px 20px;
+  background-color: var(--craft-bg-color);
+}
+
+.wine-types__outerblock {
+  margin: 50px 25px 50px 25px;
+}
+
+.wine-types__events {
+  background-image: url("../../img/wine-types/event.jpeg");
+  background-size: 448px;
+}
+
+.wine-types__organic {
+  background-image: url("../../img/wine-types/organic.jpeg");
+  background-size: 448px;
+  margin: 50px 25px 50px 25px;
+}
+
+.wine-types__selected {
+  background-image: url("../../img/wine-types/selected.jpeg");
+  background-size: 448px;
+  margin: 50px 25px 50px 25px;
+}
+
+.wine-types__innerbloc {
+  padding: 260px 40px 40px 40px;
+}
+
+.wine-types__legend {
+  font-size: 22px;
+  font-family: var(--ff-prata);
+  color: white;
+}
+
+.wine-types__innerbloc > svg {
+  width: clamp(20px, 13%, 13%);
+  min-width: 20px;
+  max-width: 13%;
+  height: 32px;
+  display: block;
+}
+
+.wine-types__description {
+  font-size: 16px;
+  font-family: var(--ff-rubik);
+  color: var(--craft-text-grey);
+}
+.wine_types__link {
+  font-size: 15px;
+  font-family: var(--ff-rubik);
+  color: white;
+  text-decoration: none;
+}
+.wine_types__link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.wine-types__link svg,
+.wine_types__link svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  flex: 0 0 24px;
+}
