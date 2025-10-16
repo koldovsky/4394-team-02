@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
-    max-width: 1200px;
+    max-width: 75%;
     margin: 0 auto;
 
     .wine-red-category {
@@ -28,7 +28,7 @@
 
       .wine-categories__title {
         font-size: 30px;
-        font-family: "Prata", serif;
+        font-family: var(--ff-title);
         font-weight: 400;
         color: var(--craft-text-color);
         text-transform: capitalize;
@@ -43,7 +43,7 @@
       }
 
       .wine-categories__description {
-        font-family: Rubik, sans-serif;
+        font-family: var(--ff-regular);
         font-size: 16px;
         color: var(--craft-text-color);
         text-align: left;
@@ -51,7 +51,7 @@
       }
 
       .wine-categories__link {
-        font-family: Rubik, sans-serif;
+        font-family: var(--ff-regular);
         font-size: 15px;
         font-weight: 700;
         color: var(--craft-text-color);
