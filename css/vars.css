@@ -19,6 +19,7 @@
     --fw-medium: 500; /* redundant */
     --fw-semi-bold: 600; /* redundant */
     --fw-bold: 700; /* redundant */
+    --section-max-width: 1200px;
     --footer-bg-color: #1a1512;
     --awards-text-color: gray;
 }
