@@ -1,17 +1,103 @@
 .history {
+  padding: 100px 15px;
+  min-height: 80vh;
+  background-image: url("../../img/video-history/wine-history-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
+    .history__container {
+      flex: 1;
+      align-items: center;
+      justify-content: baseline;
+    }
+    .history__video {
+      flex-grow: 2;
+      flex: 2;
+      align-items: center;
+      justify-content: baseline;
+    }
+  }
+
+  .history__container {
+    .history__title {
+      color: var(--craft-accent-hover-color);
+      font-size: 15px;
+      font-family: var(--ff-great-vibes);
+
+      @media (min-width: 768px) {
+        font-size: 28px;
+      }
+    }
+
+    .history__subtitle {
+      color: var(--craft-text-color);
+      font-size: 58px;
+      font-family: var(--ff-title);
+      margin: 0;
+      @media (min-width: 768px) {
+        font-size: 84px;
+      }
+    }
+
+    .history__separator {
+    }
+
+    .history__text {
+      color: var(--craft-text-color);
+      font-family: var(--ff-regular);
+      font-size: 16px;
+      text-align: left;
+      font-weight: 100;
+    }
+
+    .history__video-link {
+      color: var(--craft-text-color);
+      font-family: var(--ff-regular);
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 40px 0;
+
+      .video-link__arrow {
+        width: 24px;
+        height: 24px;
+        fill: var(--craft-text-color);
+      }
+    }
+  }
+
+  .history__video {
     display: flex;
-    padding: 100px 0 100px 0;
-}
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-top: 40px;
 
-.history__title {
-    color: var(--craft-accent-hover-color);
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Great Vibes', undefined;
-}
+    .history__video-icon {
+      width: 50px;
+      height: 50px;
+      fill: var(--craft-accent-color);
 
-.history__subtitle {
-    color: var(--craft-text-color);
-    font-size: 58px;
-    font-family: Prata, serif;
+      @media (min-width: 768px) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .history__video-text {
+      padding-top: 20px;
+      color: var(--craft-text-color);
+      font-family: var(--ff-regular);
+      font-size: 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
 }
