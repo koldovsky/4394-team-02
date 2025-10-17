@@ -1,28 +1,40 @@
 .wine-types {
-  padding: 40px 20px 40px 20px;
+  padding: 50px 25px;
   background-color: var(--craft-bg-color);
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* додатково захищає від непередбаченого overflow */
+  justify-content: center; /* додано: центрована сітка */
 }
 
-.wine-types__outerblock {
-  margin: 50px 25px 50px 25px;
+/* адаптивні колонки: мінімальна ширина колонки — 260px, максимум — 1fr */
+@media (min-width: 480px) and (max-width: 959px) {
+  .wine-types {
+    grid-template-columns: repeat(2, minmax(260px, 320px));
+    justify-content: center;
+  }
+
+  .wine-types__selected {
+    grid-column: 1 / -1;   /* зайняти весь рядок */
+    justify-self: center;  /* центрувати в рядку */
+    max-width: 320px;      /* ширина картки при центрі */
+    width: 100%;
+  }
 }
 
-.wine-types__events {
-  background-image: url("../../img/wine-types/event.jpeg");
-  background-size: 448px;
+.wine-types > .wine-types__events,
+.wine-types > .wine-types__organic,
+.wine-types > .wine-types__selected {
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
 }
 
-.wine-types__organic {
-  background-image: url("../../img/wine-types/organic.jpeg");
-  background-size: 448px;
-  margin: 50px 25px 50px 25px;
-}
-
-.wine-types__selected {
-  background-image: url("../../img/wine-types/selected.jpeg");
-  background-size: 448px;
-  margin: 50px 25px 50px 25px;
-}
+.wine-types__events { background-image: url("../../img/wine-types/event.jpeg"); }
+.wine-types__organic { background-image: url("../../img/wine-types/organic.jpeg"); }
+.wine-types__selected { background-image: url("../../img/wine-types/selected.jpeg"); }
 
 .wine-types__innerbloc {
   padding: 260px 40px 40px 40px;
@@ -47,21 +59,23 @@
   font-family: var(--ff-rubik);
   color: var(--craft-text-grey);
 }
-.wine_types__link {
+.wine-types__learn-more {
   font-size: 15px;
   font-family: var(--ff-rubik);
   color: white;
   text-decoration: none;
 }
-.wine_types__link:hover {
+.wine-types__learn-more:hover {
   text-decoration: underline;
   color: white;
 }
 
-.wine-types__link svg,
-.wine_types__link svg {
+.wine-types__learn-more svg,
+.wine-types__learn-more svg {
   width: 24px;
   height: 24px;
   vertical-align: middle;
   flex: 0 0 24px;
 }
+
+
