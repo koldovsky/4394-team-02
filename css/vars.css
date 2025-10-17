@@ -5,15 +5,19 @@
 :root {
     --craft-bg-color: #261e1c; /* Темний фон, базовий колір секції */
     --craft-text-color: #ffffff; /* Основний білий текст */
+
     --craft-accent-color: #c8693a; /* Помаранчевий акцент — колір кнопок і підзаголовків */
     --craft-accent-hover-color: rgb(175, 87, 43); /* Темніший варіант акценту для hover-ефекту */
     --craft-text-grey: #898082; /* Сірий текст для другорядної інформації */
+    --regular-text-color: #898082; 
     --ff-kumbh: "Kumbh+Sans", sans-serif;
-    --ff-inter: "Inter", sans-serif;
-    --ff-prata: "Prata", sans-serif;
-    --ff-rubik: "Rubik", sans-serif;
-    --fw-regular: 400;
-    --fw-medium: 500;
-    --fw-semi-bold: 600;
-    --fw-bold: 700;
+    --ff-title: "Prata", serif;
+    --ff-regular: "Rubik", sans-serif;
+    --ff-inter: "Inter", sans-serif; /* incorrect naming*/
+    --ff-great-vibes: "Great Vibes", cursive;
+    --fw-regular: 400; /* redundant */
+    --fw-medium: 500; /* redundant */
+    --fw-semi-bold: 600; /* redundant */
+    --fw-bold: 700; /* redundant */
+    --footer-bg-color: #1a1512;
 }

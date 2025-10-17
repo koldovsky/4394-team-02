@@ -22,7 +22,7 @@
     color: #bb600a;
     font-weight: 500;
     font-size: clamp(45px, 2.5vw, 55px);
-    font-family: 'Great Vibes', cursive;
+    font-family: var(--ff-great-vibes);
 }
 .info-text h1{
     color: aliceblue;

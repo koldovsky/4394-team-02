@@ -1,14 +1,15 @@
 .history {
     display: flex;
     padding: 100px 0 100px 0;
+
+    .history__title {
+        color: var(--craft-accent-hover-color);
+        font-size: 14px;
+        font-family: var(--ff-great-vibes);
+    }
 }
 
-.history__title {
-    color: var(--craft-accent-hover-color);
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Great Vibes', undefined;
-}
+
 
 .history__subtitle {
     color: var(--craft-text-color);
