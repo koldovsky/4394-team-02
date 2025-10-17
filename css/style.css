@@ -31,4 +31,6 @@
 
 body {
 	font-family: var(--ff-inter);
+	background-color: var(--craft-bg-color);
+	scroll-behavior: smooth;
 }

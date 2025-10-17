@@ -13,7 +13,7 @@
         .wines-blog__title {
             font-size: 14px;
             color: rgb(200, 105, 58);
-            font-family: "Great Vibes", undefined;
+            font-family: var(--ff-great-vibes);
             font-weight: 400;
         }
 

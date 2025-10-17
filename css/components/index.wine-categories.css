@@ -1,13 +1,13 @@
 .wine-categories {
-  background-color: var(--craft-bg-color);
   padding: 60px 0;
+  margin: 0 auto;
+  max-width: 75%;
+  min-width: 85%;
 
   .wine-categories__list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
-    max-width: 75%;
-    margin: 0 auto;
 
     .wine-red-category {
       background-image: url("../../img/wine-categories/red-wine.jpeg");

@@ -13,7 +13,7 @@
 }
 
 .craft-wines-subtitle {
-  font-family: "Great Vibes", cursive;
+  font-family: var(--ff-great-vibes);
   font-size: 14px;
   color: var(--craft-accent-color);
   margin-bottom: 10px;

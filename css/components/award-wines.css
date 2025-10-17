@@ -6,7 +6,7 @@
 .awards {
     color: #c8693a;
     font-style: italic;
-    font-family: 'Great Vibes', undefined;
+    font-family: var(--ff-great-vibes);
     font-size: 28px;
     text-align: center;
 }
