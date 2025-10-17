@@ -16,8 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-   
-   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -31,13 +35,13 @@
       data-hx-swap="outerHTML"
       data-hx-get="global.age-confirm.pratitial.html"
     ></section> -->
-    <header class="header"
-        data-hx-trigger="load"
-        data-hx-swap="innerHTML"
-        data-hx-get="global.header-nav.partial.html"
+    <header
+      class="header"
+      data-hx-trigger="load"
+      data-hx-swap="innerHTML"
+      data-hx-get="global.header-nav.partial.html"
     ></header>
 
- 
     <main class="main">
       <section
         class="header-banner"
@@ -46,16 +50,16 @@
         data-hx-get="index.header-banner.html"
       ></section>
       <section
-        class="wine-types"
-        data-hx-trigger="load"
-        data-hx-swap="innerHTML"
-        data-hx-get="index.wine-types.partial.html"
-      ></section>
-      <section
         class="discover-wines"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.discover-wines.partial.html"
+      ></section>
+      <section
+        class="wine-types"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wine-types.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
@@ -74,7 +78,85 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.craft-wines.partial.html"
       ></section>
-    
+
+      <main class="main">
+        <section
+          class="header-banner"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.header-banner.html"
+        ></section>
+        <section
+          class="wine-types"
+          data-hx-trigger="load"
+          data-hx-swap="innerHTML"
+          data-hx-get="index.wine-types.partial.html"
+        ></section>
+        <section
+          class="discover-wines"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.discover-wines.partial.html"
+        ></section>
+        <section
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.best-deals.partial.html"
+        ></section>
+        <section
+          class="traditional-wine"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.traditional-wine.partial.html"
+        ></section>
+        <section
+          class="craft-wines"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.craft-wines.partial.html"
+        ></section>
+
+        <section
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.video-history.partial.html"
+        ></section>
+        <section
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.wine-categories.partial.html"
+        ></section>
+        <section
+          class="awards-wines"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.awards-wines.partial.html"
+        ></section>
+        <section
+          class="wines-blog"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.wines-blog.partial.html"
+        ></section>
+        <section
+          class="faq"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.faq.partial.html"
+        ></section>
+        <section
+          class="popup-basket"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.popup-basket.html"
+        ></section>
+        <section
+          class="popup-basket-empty"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.popup-basket-empty.html"
+        ></section>
+      </main>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -84,6 +166,11 @@
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.wine-categories.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.promo-discounts.partial.html"
       ></section>
       <section
         class="awards-wines"
@@ -110,30 +197,30 @@
         data-hx-get="index.popup-basket.html"
       ></section>
       <section
-      class="popup-basket-empty"
+        class="popup-basket-empty"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.popup-basket-empty.html"
       ></section>
     </main>
-     Perepichka Iryna
-     <footer class="footer">
+    Perepichka Iryna
+    <footer class="footer">
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.footer-form.partial.html"
       ></section>
-      <section
+      <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.footer-nav.partial.html"
-      ></section>
-    </footer>  
+      ></div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-   
-        <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
