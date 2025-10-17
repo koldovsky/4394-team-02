@@ -1,18 +1,18 @@
 .awards-wine {
-    background-color: #261e1c;
+    background-color: var(--craft-bg-color);
     padding: 0 5px;
    
 }
 .awards {
-    color: #c8693a;
+    color: var(--craft-accent-color);
     font-style: italic;
     font-family: var(--ff-great-vibes);
     font-size: 28px;
     text-align: center;
 }
 .awards-wines__title {
-   color: white;
-   font-family: Prata, serif; 
+   color: var(--craft-text-color);
+   font-family: var(--ff-title); 
    font-size: 48px;
    text-align: center;
 }
@@ -21,44 +21,61 @@
     margin: 20px auto;
 }
 .awards-title {
-    color: white;
-    font-family: Rubik, sans-serif;
+    color: var(--craft-text-color);
+    font-family: var(--ff-regular);
     font-size: 18px;
     text-align: center;
+    padding: 20px 0;
 }
-.awards-content {
+.awards-content__description {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-content: center;
-    gap: 5px;
-        img {
-        width: 138px;
+    grid-template-columns: 1fr 1.4fr 0.5fr 5fr;
+    gap: 35px;
+    align-items: center;
+
+    img {
+        width: 170px;
         height: auto;
-        padding: auto 5px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    @media (max-width: 600px) {
-     img {
-        width: 100%;
-        height: auto;
-        max-width: 600px;
-        }
-    }
+    
     h3 {
-        font-family: Rubik, sans-serif;
+        font-family: var(--ff-regular);
         font-size: 18px;
-        color: white;
-        text-align: center;
+        font: inherit;
+        color: var(--craft-text-color);
+        text-align: left;
+        display: flex;
+        align-items: center;
     } 
 } 
 .year {
-    font-family: Prata, serif;
+    font-family: var(--ff-title); 
     font-size: 22px;
-    color: white;
-    text-align: center;
+    color: var(--craft-text-color);
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 .awards-text {
-    font-family: Rubik, sans-serif;
+    font-family: var(--ff-regular);
     font-size: 16px;
-    color: grey;
+    color: var(--awards-text-color);
     text-align: left;
 }
+
+@media (max-width: 768px) {
+    .awards-content__description {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+     img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+     }
+        }
+    }
