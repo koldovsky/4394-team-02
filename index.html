@@ -41,7 +41,6 @@
       data-hx-swap="innerHTML"
       data-hx-get="global.header-nav.partial.html"
     ></header>
-
     <main class="main">
       <section
         class="header-banner"
@@ -50,16 +49,22 @@
         data-hx-get="index.header-banner.html"
       ></section>
       <section
-        class="discover-wines"
+        class="wine-types"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.discover-wines.partial.html"
+        data-hx-get="index.wine-types.partial.html"
       ></section>
       <section
         class="wine-types"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.wine-types.partial.html"
+        data-hx-get="index.wine-special.partial.html"
+      ></section>
+      <section
+        class="discover-wines"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.discover-wines.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
@@ -78,45 +83,7 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.craft-wines.partial.html"
       ></section>
-
-      <main class="main">
-        <section
-          class="header-banner"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.header-banner.html"
-        ></section>
-        <section
-          class="wine-types"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.wine-types.partial.html"
-        ></section>
-        <section
-          class="discover-wines"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.discover-wines.partial.html"
-        ></section>
-        <section
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.best-deals.partial.html"
-        ></section>
-        <section
-          class="traditional-wine"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.traditional-wine.partial.html"
-        ></section>
-        <section
-          class="craft-wines"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.craft-wines.partial.html"
-        ></section>
-
-        <section
+      <section
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
           data-hx-get="index.video-history.partial.html"

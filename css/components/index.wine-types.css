@@ -1,31 +1,32 @@
 .wine-types {
-    padding:90px 20px 20px 20px;
+  padding: 90px 20px 20px 20px;
   background-color: var(--craft-bg-color);
   display: grid;
   justify-content: center;
   gap: 25px;
-  min-width:320px;
+  min-width: 320px;
 }
 
-@media (min-width: 481px) and (max-width:960px) {
+@media (min-width: 481px) and (max-width: 960px) {
   .wine-types {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
   }
-.wine-types__events {
+  .wine-types__events {
     grid-column: 1 / 3;
     justify-self: center;
   }
-.wine-types__organic {
+  .wine-types__organic {
     grid-column: 3 / 5;
     justify-self: center;
   }
- .wine-types__selected {
+  .wine-types__selected {
     grid-column: 2 / 4;
     justify-self: center;
   }
 }
-  @media (min-width: 961px) {
+
+@media (min-width: 961px) {
   .wine-types {
     grid-template-columns: 1fr 1fr 1fr;
     justify-self: center;
@@ -40,9 +41,15 @@
   justify-self: center;
 }
 
-.wine-types__events { background-image: url("../../img/wine-types/event.jpeg"); }
-.wine-types__organic { background-image: url("../../img/wine-types/organic.jpeg"); }
-.wine-types__selected { background-image: url("../../img/wine-types/selected.jpeg"); }
+.wine-types__events {
+  background-image: url("../../img/wine-types/event.jpeg");
+}
+.wine-types__organic {
+  background-image: url("../../img/wine-types/organic.jpeg");
+}
+.wine-types__selected {
+  background-image: url("../../img/wine-types/selected.jpeg");
+}
 
 .wine-types__innerbloc {
   padding: 260px 40px 40px 40px;
@@ -50,7 +57,7 @@
 
 .wine-types__legend {
   font-size: 22px;
-  font-family: var(--ff-prata);
+  font-family: var(--ff-title);
   color: white;
 }
 
@@ -64,15 +71,17 @@
 
 .wine-types__description {
   font-size: 16px;
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-regular);
   color: var(--craft-text-grey);
 }
+
 .wine-types__learn-more {
   font-size: 15px;
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-regular);
   color: white;
   text-decoration: none;
 }
+
 .wine-types__learn-more:hover {
   text-decoration: underline;
   color: white;
@@ -85,5 +94,3 @@
   vertical-align: middle;
   flex: 0 0 24px;
 }
-
-
