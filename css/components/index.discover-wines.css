@@ -66,21 +66,21 @@
 
 .discover-wines__btn--primary {
   background: var(--accent-color);
-  color: #fff;
+  color: #ffffff;
 }
 
 .discover-wines__btn--primary:hover {
-  background: #cf7a3b;
+  background: #c8693a;
 }
 
 .discover-wines__btn--outline {
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #ffffff;
+  color: #ffffff;
 }
 
 .discover-wines__btn--outline:hover {
-  background: #fff;
-  color: #000;
+  background: #ffffff;
+  color: #1a1512;
 }
 
 /* ===== Планшет (min-width: 480px) ===== */
