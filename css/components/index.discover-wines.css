@@ -2,7 +2,7 @@
 /* ===== Базові стилі (Mobile First) ===== */
 #discover-wines {
   position: relative;
-  background: url("https://res2.weblium.site/res/60115ce126eea30022ce1a18/601965ec4468a90021f68613");
+  background: url("../../img/discover-wines/people wines.jpg");
   color: var(--text-color);
   height: 100vh;
   display: flex;
@@ -97,7 +97,7 @@
 /* ===== Десктоп (min-width: 992px) ===== */
 @media (min-width: 992px) {
   #discover-wines {
-    background: url("https://res2.weblium.site/res/60115ce126eea30022ce1a18/601965ec4468a90021f68613");
+    background: url("../../img/discover-wines/people wines.jpg");
   }
 
   .discover-wines__title {
