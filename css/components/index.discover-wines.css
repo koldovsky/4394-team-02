@@ -2,7 +2,7 @@
 /* ===== Базові стилі (Mobile First) ===== */
 #discover-wines {
   position: relative;
-  background: url("../../img/discover-wines/people wines.jpg");
+  background: url("../../img/discover-wines/people-wines.jpg");
   color: var(--text-color);
   height: 100vh;
   display: flex;
@@ -97,7 +97,7 @@
 /* ===== Десктоп (min-width: 992px) ===== */
 @media (min-width: 992px) {
   #discover-wines {
-    background: url("../../img/discover-wines/people wines.jpg");
+    background: url("../../img/discover-wines/people-wines.jpg");
   }
 
   .discover-wines__title {
