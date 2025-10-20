@@ -1,0 +1,118 @@
+/* === Секція №5 Discover Our Wines – Піндер Максим === */
+/* ===== Базові стилі (Mobile First) ===== */
+#discover-wines {
+  position: relative;
+  background: url("https://res2.weblium.site/res/60115ce126eea30022ce1a18/601965ec4468a90021f68613");
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Overlay (затемнення поверх фону) */
+.discover-wines__overlay {
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.discover-wines__content {
+  max-width: 700px;
+}
+
+/* Тексти */
+.discover-wines__subtitle {
+  color: var(--accent-color);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.discover-wines__title {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.discover-wines__vine {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.discover-wines__description {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Кнопки */
+.discover-wines__buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.discover-wines__btn {
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.discover-wines__btn--primary {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.discover-wines__btn--primary:hover {
+  background: #cf7a3b;
+}
+
+.discover-wines__btn--outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.discover-wines__btn--outline:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ===== Планшет (min-width: 480px) ===== */
+@media (min-width: 480px) {
+  .discover-wines__title {
+    font-size: 44px;
+  }
+
+  .discover-wines__description {
+    font-size: 15px;
+  }
+}
+
+/* ===== Десктоп (min-width: 992px) ===== */
+@media (min-width: 992px) {
+  #discover-wines {
+    background: url("https://res2.weblium.site/res/60115ce126eea30022ce1a18/601965ec4468a90021f68613") center/cover no-repeat;
+  }
+
+  .discover-wines__title {
+    font-size: 60px;
+  }
+
+  .discover-wines__subtitle {
+    font-size: 18px;
+  }
+
+  .discover-wines__description {
+    font-size: 16px;
+  }
+
+  .discover-wines__btn {
+    padding: 14px 40px;
+  }
+}
