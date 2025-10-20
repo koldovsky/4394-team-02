@@ -46,3 +46,42 @@
   height: 32px;
   display: block;
 }
+
+.wine-special__outerblock {
+    display: grid;
+    justify-self: center;
+    gap: 25px;
+    min-width: 320px;
+}
+
+.wine-special__advantage{
+    padding: 25px;;
+  }
+
+.wine-special__bottle {
+        /* path relative to this CSS file (css/components/) */
+        background-image: url("../../img/wine-special/wine-bottle.png");
+        background-size: contain; 
+        background-position: center center; 
+        background-repeat: no-repeat;
+        min-width: 320px; 
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        height: auto;
+}
+
+@media (min-width: 767px){
+  .wine-special__outerblock {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+ .wine-special__bottle {
+    grid-row: 1 / 4;
+    justify-self: center;
+  }
+  .wine-special__advantage{
+    max-width: 370px;
+  }
+}
+
+
