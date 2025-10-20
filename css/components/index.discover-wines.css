@@ -1,6 +1,6 @@
 /* === Секція №5 Discover Our Wines – Піндер Максим === */
 /* ===== Базові стилі (Mobile First) ===== */
-#discover-wines {
+.discover-wines {
   position: relative;
   background: url("../../img/discover-wines/people-wines.jpg");
   color: var(--text-color);
