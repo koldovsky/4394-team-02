@@ -2,7 +2,7 @@
 
 function circleCircumference(circle) {
     const numRound = 1000000;
-    return Math.round(2 * Math.PI * circle.radius * numRound) / numRound;
+    return Math.round(2 * Math.PI * circle.radius * numRound) / numRound; //Ще як варінат (return 2 * Math.PI * circle.radius; )
 }
 
 // https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
