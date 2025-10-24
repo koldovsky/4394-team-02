@@ -1,6 +1,6 @@
 .testimonials {
-  background: url("../../img/testimonials/grapes.webp") no-repeat center top / contain, #1f1412;
-  color: #fff;
+  background: url("../../img/testimonials/grapes.webp") no-repeat center top / contain, var(--craft-bg-color);
+  color: var(--craft-text-color);
   text-align: center;
   padding: 100px 0;
   position: relative;
@@ -8,17 +8,19 @@
 }
 
 .testimonials__subtitle {
-  font-family: "Playfair Display", serif;
-  color: #c46a2b; /* var(--accent) */
+  font-family: var(--ff-great-vibes);
+  color: var(--craft-accent-color);
   font-style: italic;
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 28px;
+  text-align: center;
 }
 
 .testimonials__title {
-  font-family: "Playfair Display", serif;
+  font-family: var(--ff-title);
   font-weight: 700;
-  font-size: 52px;
+  font-size: 48px;
+  color: var(--craft-text-color);
   line-height: 1.15;
   margin: 0 0 10px;
 }
