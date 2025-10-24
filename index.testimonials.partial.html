@@ -1,0 +1,87 @@
+<section class="testimonials">
+  <div class="container testimonials__container">
+    <p class="testimonials__subtitle">Testimonials</p>
+    <h3 class="testimonials__title">What Our Wine-Lovers Say</h3>
+
+    <img src="icons/common/wine-ornament.svg" alt="ornament" class="testimonials__ornament">
+
+    <p class="testimonials__description">
+      Wine is a bottled poetry. Read some stories from our customers below.
+    </p>
+
+    <div class="testimonials__slider">
+      <div class="testimonials__slide active">
+        <p class="testimonials__text">
+          “I really like to please myself with good wine with a rich taste. Therefore, from time to time, I order wine directly from the CaliWines winery. I also buy Chardonnay and Cabernet for family holidays. We are completely delighted with the amazing taste of these wines, which we want to enjoy endlessly.”
+        </p>
+      </div>
+
+      <div class="testimonials__slide">
+        <p class="testimonials__text">
+          “We were to hold a responsible event with a buffet table and wanted to surprise our guests with some local products. I recalled that we have the CaliWines winery in California and ordered 10 bottles of Chardonnay. Our guests were delighted and asked for the name of the producer!”
+        </p>
+      </div>
+
+      <div class="testimonials__slide">
+        <p class="testimonials__text">
+          “Our restaurant has been cooperating with this winery for over 10 years. We order the whole range of wines from them. We are completely satisfied with the quality of the wine supplied to us. And our guests often choose CaliWines from our wine menu.”
+        </p>
+      </div>
+    </div>
+
+    <div class="testimonials__controls">
+      <button class="testimonials__arrow testimonials__arrow--prev" aria-label="Previous">
+        &#10094;
+      </button>
+
+      <div class="testimonials__dots" role="tablist" aria-label="Testimonials pagination">
+        <span class="testimonials__dot active" role="tab" aria-selected="true" tabindex="0"></span>
+        <span class="testimonials__dot" role="tab" aria-selected="false" tabindex="0"></span>
+        <span class="testimonials__dot" role="tab" aria-selected="false" tabindex="0"></span>
+      </div>
+
+      <button class="testimonials__arrow testimonials__arrow--next" aria-label="Next">
+        &#10095;
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const slides = document.querySelectorAll('.testimonials__slide');
+    const dots = document.querySelectorAll('.testimonials__dot');
+    const prev = document.querySelector('.testimonials__arrow--prev');
+    const next = document.querySelector('.testimonials__arrow--next');
+    let index = 0;
+
+    function showSlide(i) {
+      slides.forEach((s, idx) => {
+        s.classList.toggle('active', idx === i);
+        dots[idx].classList.toggle('active', idx === i);
+        dots[idx].setAttribute('aria-selected', idx === i ? 'true' : 'false');
+      });
+    }
+
+    prev.addEventListener('click', () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    });
+
+    next.addEventListener('click', () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        index = i;
+        showSlide(index);
+      });
+      dot.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); index = i; showSlide(index); }
+      });
+    });
+  })();
+</script>
+
