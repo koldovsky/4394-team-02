@@ -1,5 +1,5 @@
 .testimonials {
-  background-color: #1f1412; /* можно заменить на var(--bg-dark) */
+  background: url("../../img/testimonials/grapes.webp") no-repeat center top / contain, #1f1412;
   color: #fff;
   text-align: center;
   padding: 100px 0;
