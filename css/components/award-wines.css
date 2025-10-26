@@ -1,81 +1,80 @@
 .awards-wine {
-    background-color: var(--craft-bg-color);
-    padding: 0 5px;
-   
+  background-color: var(--craft-bg-color);
+  padding: 0 5px;
 }
 .awards {
-    color: var(--craft-accent-color);
-    font-style: italic;
-    font-family: var(--ff-great-vibes);
-    font-size: 28px;
-    text-align: center;
+  color: var(--craft-accent-color);
+  font-style: italic;
+  font-family: var(--ff-artistic);
+  font-size: 28px;
+  text-align: center;
 }
 .awards-wines__title {
-   color: var(--craft-text-color);
-   font-family: var(--ff-title); 
-   font-size: 48px;
-   text-align: center;
+  color: var(--craft-text-color);
+  font-family: var(--ff-title);
+  font-size: 48px;
+  text-align: center;
 }
 .awards-ornament {
-    display: block;
-    margin: 20px auto;
+  display: block;
+  margin: 20px auto;
 }
 .awards-title {
-    color: var(--craft-text-color);
-    font-family: var(--ff-regular);
-    font-size: 18px;
-    text-align: center;
-    padding: 20px 0;
+  color: var(--craft-text-color);
+  font-family: var(--ff-regular);
+  font-size: 18px;
+  text-align: center;
+  padding: 20px 0;
 }
 .awards-content__description {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr 0.5fr 5fr;
-    gap: 35px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 0.5fr 5fr;
+  gap: 35px;
+  align-items: center;
 
-    img {
-        width: 170px;
-        height: auto;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    h3 {
-        font-family: var(--ff-regular);
-        font-size: 18px;
-        font: inherit;
-        color: var(--craft-text-color);
-        text-align: left;
-        display: flex;
-        align-items: center;
-    } 
-} 
-.year {
-    font-family: var(--ff-title); 
-    font-size: 22px;
+  img {
+    width: 170px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    font-family: var(--ff-regular);
+    font-size: 18px;
+    font: inherit;
     color: var(--craft-text-color);
     text-align: left;
     display: flex;
     align-items: center;
+  }
+}
+.year {
+  font-family: var(--ff-title);
+  font-size: 22px;
+  color: var(--craft-text-color);
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 .awards-text {
-    font-family: var(--ff-regular);
-    font-size: 16px;
-    color: var(--awards-text-color);
-    text-align: left;
+  font-family: var(--ff-regular);
+  font-size: 16px;
+  color: var(--awards-text-color);
+  text-align: left;
 }
 
 @media (max-width: 768px) {
-    .awards-content__description {
+  .awards-content__description {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    
-     img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-     }
-        }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
+  }
+}
