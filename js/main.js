@@ -4,7 +4,6 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	// init(); 
 	//hamburger
 	function initHamburger() {
 		const hamburger = document.querySelector(".hamburger");

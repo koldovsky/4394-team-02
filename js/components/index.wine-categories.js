@@ -3,13 +3,13 @@ const WINE_CATEGORY = [
         name: 'Red Wines',
         description: 'Great selection of red wines for you.',
         background: 'wine-red-category',
-        link: '#index.craft-wines.partial.html',
+        link: 'index.craft-wines.partial.html',
     },
     {
         name: 'White Wines',
         description: 'Top white wines for any occasion.',
         background: 'wine-white-category',
-        link: '#index.craft-wines.partial.html',
+        link: 'index.craft-wines.partial.html',
     },
 ];
 
