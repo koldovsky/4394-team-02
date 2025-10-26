@@ -1,4 +1,10 @@
+function init() {
+	import('./components/index.video-history.js');
+	import('./components/index.wine-categories.js');
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+	// init(); 
 	//hamburger
 	function initHamburger() {
 		const hamburger = document.querySelector(".hamburger");
@@ -87,3 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
+document.body.addEventListener('htmx:afterOnLoad', () => {
+	init();
+});

@@ -162,13 +162,13 @@
         grid-column: 1 / -1;
         background-position: right center !important;
       }
-    }
 
-    .promo-discounts__container {
-      padding: 55px 30px 55px 40px;
+      .promo-discounts__container {
+        padding: 55px 30px 55px 40px;
 
-      .promo-discounts__title {
-        font-size: 48px;
+        .promo-discounts__title {
+          font-size: 48px;
+        }
       }
     }
   }
