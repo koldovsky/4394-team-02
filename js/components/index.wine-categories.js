@@ -3,13 +3,11 @@ const WINE_CATEGORY = [
         name: 'Red Wines',
         description: 'Great selection of red wines for you.',
         background: 'wine-red-category',
-        link: 'index.craft-wines.partial.html',
     },
     {
         name: 'White Wines',
         description: 'Top white wines for any occasion.',
         background: 'wine-white-category',
-        link: 'index.craft-wines.partial.html',
     },
 ];
 
@@ -23,7 +21,7 @@ function renderWineCategories(categories) {
                 <path d="M0 16 L3000 16"></path>
             </svg>
             <p class="wine-categories__description">${category.description}</p>
-            <a class="wine-categories__link" href="${category.link}">Shop ${category.name.toLowerCase()}</a>
+            <a class="wine-categories__link" href="#craft-wines-section">Shop ${category.name.toLowerCase()}</a>
         </article>
         `;
         categoriesHTML.push(categoryHTML);

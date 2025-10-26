@@ -16,7 +16,7 @@
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
       column-gap: 1em;
-      margin-left: 150px;
+      margin-left: 250px;
 
       .history__container {
         flex: 1;
