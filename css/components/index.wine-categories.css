@@ -7,7 +7,12 @@
   .wine-categories__list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 2em;
+
+    @media(min-width:768px) {
+      margin: 50px 100px;
+    }
+
 
     .wine-red-category {
       background-image: url("../../img/wine-categories/red-wine.jpeg");
@@ -78,6 +83,23 @@
       padding: 55px 30px 55px 40px;
       position: relative;
 
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(200, 105, 58, 0.82);
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      >* {
+        position: relative;
+        z-index: 2;
+      }
+
       .promo-discounts__title {
         font-family: var(--ff-title);
         font-size: 48px;
@@ -110,6 +132,7 @@
         &:hover {
           background-color: var(--craft-text-color);
           color: black;
+
           .promo-discounts__arrow {
             color: black;
           }

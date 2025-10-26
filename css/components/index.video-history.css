@@ -6,98 +6,125 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    gap: 0;
+  .history__general-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+    margin-left: 15px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1em;
+      margin-left: 150px;
+
+      .history__container {
+        flex: 1;
+        align-items: center;
+        justify-content: baseline;
+      }
+
+      .history__video {
+        /* flex-grow: 2;
+      flex: 2; */
+        align-items: center;
+        justify-content: baseline;
+      }
+    }
+
     .history__container {
-      flex: 1;
-      align-items: center;
-      justify-content: baseline;
+      @media (min-width: 768px) {
+        margin-right: 200px;
+      }
+
+      .history__title {
+        color: var(--craft-accent-hover-color);
+        font-size: 15px;
+        font-family: var(--ff-artistic);
+
+        @media (min-width: 768px) {
+          font-size: 28px;
+        }
+      }
+
+      .history__subtitle {
+        color: var(--craft-text-color);
+        font-size: 58px;
+        font-family: var(--ff-title);
+        margin: 0;
+
+        @media (min-width: 768px) {
+          font-size: 84px;
+        }
+      }
+
+      .history__separator {
+        @media (min-width: 768px) {
+          margin-bottom: 30px;
+          margin-top: 20px;
+        }
+      }
+
+      .history__text {
+        color: var(--craft-text-color);
+        font-family: var(--ff-regular);
+        font-size: 16px;
+        text-align: left;
+        font-weight: 100;
+      }
+
+      .history__video-link {
+        color: var(--craft-text-color);
+        font-family: var(--ff-regular);
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 40px 0;
+
+        .video-link__arrow {
+          width: 24px;
+          height: 24px;
+          fill: var(--craft-text-color);
+        }
+      }
     }
+
     .history__video {
-      flex-grow: 2;
-      flex: 2;
-      align-items: center;
-      justify-content: baseline;
-    }
-  }
+      .history__video-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        padding-top: 40px;
 
-  .history__container {
-    .history__title {
-      color: var(--craft-accent-hover-color);
-      font-size: 15px;
-      font-family: var(--ff-artistic);
+        @media (min-width: 768px) {
+          align-items: center;
+          justify-content: center;
+          margin-top: 200px;
+          margin-left: -800px;
+        }
 
-      @media (min-width: 768px) {
-        font-size: 28px;
+
+        .history__video-icon {
+          width: 50px;
+          height: 50px;
+          fill: var(--craft-accent-color);
+
+          @media (min-width: 768px) {
+            width: 70px;
+            height: 70px;
+          }
+        }
+
+        .history__video-text {
+          padding-top: 20px;
+          color: var(--craft-text-color);
+          font-family: var(--ff-regular);
+          font-size: 15px;
+          text-decoration: none;
+          font-weight: 500;
+        }
       }
-    }
-
-    .history__subtitle {
-      color: var(--craft-text-color);
-      font-size: 58px;
-      font-family: var(--ff-title);
-      margin: 0;
-      @media (min-width: 768px) {
-        font-size: 84px;
-      }
-    }
-
-    .history__separator {
-    }
-
-    .history__text {
-      color: var(--craft-text-color);
-      font-family: var(--ff-regular);
-      font-size: 16px;
-      text-align: left;
-      font-weight: 100;
-    }
-
-    .history__video-link {
-      color: var(--craft-text-color);
-      font-family: var(--ff-regular);
-      font-size: 15px;
-      font-weight: 500;
-      text-decoration: none;
-      padding: 40px 0;
-
-      .video-link__arrow {
-        width: 24px;
-        height: 24px;
-        fill: var(--craft-text-color);
-      }
-    }
-  }
-
-  .history__video {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    padding-top: 40px;
-
-    .history__video-icon {
-      width: 50px;
-      height: 50px;
-      fill: var(--craft-accent-color);
-
-      @media (min-width: 768px) {
-        width: 70px;
-        height: 70px;
-      }
-    }
-
-    .history__video-text {
-      padding-top: 20px;
-      color: var(--craft-text-color);
-      font-family: var(--ff-regular);
-      font-size: 15px;
-      text-decoration: none;
-      font-weight: 500;
     }
   }
 }
