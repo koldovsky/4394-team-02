@@ -29,5 +29,26 @@ function renderWineCategories(categories) {
     const wineCategoriesList = document.querySelector('.wine-categories__list');
     categoriesHTML.push(wineCategoriesList.innerHTML);
     wineCategoriesList.innerHTML = categoriesHTML.join('');
+    addSmoothScrollListeners();
 }
+
+function addSmoothScrollListeners() {
+    const targetLinks = document.querySelectorAll('.wine-categories__link, .promo-discounts__link');
+
+    targetLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const targetSection = this.getAttribute('href');
+            const targetElement = document.querySelector(`${targetSection}`);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
 renderWineCategories(WINE_CATEGORY);
