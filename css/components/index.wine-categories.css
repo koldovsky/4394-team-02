@@ -9,11 +9,6 @@
     grid-template-columns: 1fr;
     gap: 2em;
 
-    @media(min-width:768px) {
-      margin: 50px 100px;
-    }
-
-
     .wine-red-category {
       background-image: url("../../img/wine-categories/red-wine.jpeg");
       background-size: cover;
@@ -32,7 +27,7 @@
       padding: 100px 150px 100px 40px;
 
       .wine-categories__title {
-        font-size: 30px;
+        font-size: 28px;
         font-family: var(--ff-title);
         font-weight: 400;
         color: var(--craft-text-color);
@@ -80,7 +75,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
-      padding: 55px 30px 55px 40px;
+      padding: 25px 10px 40px 20px;
       position: relative;
 
       &::before {
@@ -102,7 +97,7 @@
 
       .promo-discounts__title {
         font-family: var(--ff-title);
-        font-size: 48px;
+        font-size: 34px;
         color: var(--craft-text-color);
       }
 
@@ -145,11 +140,36 @@
     .wine-categories__list {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr 0.75fr;
+      margin: 50px 100px;
+
+      .wine-categories__container {
+        .wine-categories__title {
+          font-size: 30px;
+          font-weight: 400;
+        }
+
+        .wine-categories__description {
+          font-size: 16px;
+        }
+
+        .wine-categories__link {
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+
+      .promo-discounts__container {
+        grid-column: 1 / -1;
+        background-position: right center !important;
+      }
     }
 
     .promo-discounts__container {
-      grid-column: 1 / -1;
-      background-position: right center !important;
+      padding: 55px 30px 55px 40px;
+
+      .promo-discounts__title {
+        font-size: 48px;
+      }
     }
   }
 }
