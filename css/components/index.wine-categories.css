@@ -7,7 +7,7 @@
   .wine-categories__list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 2em;
 
     .wine-red-category {
       background-image: url("../../img/wine-categories/red-wine.jpeg");
@@ -27,7 +27,7 @@
       padding: 100px 150px 100px 40px;
 
       .wine-categories__title {
-        font-size: 30px;
+        font-size: 28px;
         font-family: var(--ff-title);
         font-weight: 400;
         color: var(--craft-text-color);
@@ -75,12 +75,29 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
-      padding: 55px 30px 55px 40px;
+      padding: 25px 10px 40px 20px;
       position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(200, 105, 58, 0.82);
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      >* {
+        position: relative;
+        z-index: 2;
+      }
 
       .promo-discounts__title {
         font-family: var(--ff-title);
-        font-size: 48px;
+        font-size: 34px;
         color: var(--craft-text-color);
       }
 
@@ -110,6 +127,7 @@
         &:hover {
           background-color: var(--craft-text-color);
           color: black;
+
           .promo-discounts__arrow {
             color: black;
           }
@@ -122,11 +140,36 @@
     .wine-categories__list {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr 0.75fr;
+      margin: 50px 100px;
+
+      .wine-categories__container {
+        .wine-categories__title {
+          font-size: 30px;
+          font-weight: 400;
+        }
+
+        .wine-categories__description {
+          font-size: 16px;
+        }
+
+        .wine-categories__link {
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+
+      .promo-discounts__container {
+        grid-column: 1 / -1;
+        background-position: right center !important;
+      }
     }
 
     .promo-discounts__container {
-      grid-column: 1 / -1;
-      background-position: right center !important;
+      padding: 55px 30px 55px 40px;
+
+      .promo-discounts__title {
+        font-size: 48px;
+      }
     }
   }
 }
