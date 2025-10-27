@@ -1,4 +1,4 @@
-export default function initFAQ() {
+function initFAQ() {
   const items = document.querySelectorAll(".accordion__item");
   if (!items.length) return;
 

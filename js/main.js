@@ -2,7 +2,7 @@ function init() {
 	import('./components/index.video-history.js');
 	import('./components/index.wine-categories.js');
 	import('./components/index.wine-types.js');
-	import('./components/faq__acordion.js');
+	import('./components/index.faq-accordion.js');
 }
 
 document.addEventListener("DOMContentLoaded", () => {
