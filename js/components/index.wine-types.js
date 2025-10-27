@@ -1,6 +1,5 @@
 const wineTypes = [
   {
-    id: 0,
     legend: "For Your Special Events",
     link: "#index.best-deal",
     image: "../../img/wine-types/event.jpeg",
@@ -8,7 +7,6 @@ const wineTypes = [
     name: "wine-types__events",
   },
   {
-    id: 1,
     legend: "100% Organic Wines",
     link: "#index.wine-special",
     image: "../../img/wine-types/organic.jpeg",
@@ -16,7 +14,6 @@ const wineTypes = [
     name: "wine-types__organic",
   },
   {
-    id: 2,
     legend: "Selected Grape Varieties",
     link: "#index.wine-special",
     image: "../../img/wine-types/selected.jpeg",
