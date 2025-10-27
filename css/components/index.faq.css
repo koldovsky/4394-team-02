@@ -8,16 +8,16 @@
   flex-direction: row;
   gap: 25px;
   padding: 0 max(5px, 1%);
+}
 
-  & {
-    @media (max-width: 1000px) {
-      flex-direction: column;
-    }
+@media (max-width: 1000px) {
+  .faq__container {
+    flex-direction: column;
   }
+}
 
-  & img {
-    margin-bottom: 20px;
-  }
+.faq__container img {
+  margin-bottom: 20px;
 }
 
 .faq__fancy-text {
@@ -28,21 +28,21 @@
 
 .faq__text-container {
   width: 60%;
+}
 
-  & {
-    @media (max-width: 1000px) {
-      width: 100%;
-      padding: 0 5%;
-    }
+@media (max-width: 1000px) {
+  .faq__text-container {
+    width: 100%;
+    padding: 0 5%;
   }
+}
 
-  & h2 {
-    color: var(--craft-text-color);
-    font-weight: 500;
-    font-family: Prata, serif;
-    font-size: clamp(2rem, 3vw, 6rem);
-    margin-bottom: 20px;
-  }
+.faq__text-container h2 {
+  color: var(--craft-text-color);
+  font-weight: 500;
+  font-family: Prata, serif;
+  font-size: clamp(2rem, 3vw, 6rem);
+  margin-bottom: 20px;
 }
 
 .accordion {
@@ -54,63 +54,103 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+}
 
-  & button {
-    padding: 0;
-    width: 100%;
-    border: none;
-    background-color: var(--craft-bg-color);
-    color: var(--craft-text-color);
-    font-weight: 500;
-    font-family: Prata, serif;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
+.accordion__item button {
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  background-color: var(--craft-bg-color);
+  color: var(--craft-text-color);
+  font-weight: 500;
+  font-family: Prata, serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: left;
+}
 
-  .accordion__button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.accordion__item .accordion__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    &:focus {
-      outline: none;
-    }
-  }
+.accordion__item .accordion__button:focus {
+  outline: none;
+}
 
-  & span {
-    color: var(--craft-text-color);
-    font-weight: 500;
-    font-family: Prata, serif;
-    font-size: clamp(2rem, 3vw, 6rem);
-    transition: transform 0.4s ease;
-  }
+.accordion__item span.accordion__icon {
+  color: var(--craft-text-color);
+  font-weight: 500;
+  font-family: Prata, serif;
 }
 
 .faq__img-container {
   width: 40%;
+}
 
-  & {
-    @media (max-width: 1000px) {
-      width: 100%;
-      padding: 0 5%;
-    }
-  }
-
-  & img {
+@media (max-width: 1000px) {
+  .faq__img-container {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 0;
+    padding: 0 5%;
   }
 }
 
+.faq__img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.accordion__item .accordion__icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.accordion__item .accordion__icon::before,
+.accordion__item .accordion__icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--craft-text-color);
+  transition: transform 0.3s ease-out;
+}
+
+.accordion__item .accordion__icon::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  transform: translateY(-50%);
+}
+
+.accordion__item .accordion__icon::after {
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
 .accordion__content {
-  & p {
-    color: #898082;
-    font-weight: 500;
-    font-family: Prata, serif;
-    font-size: 0.9rem;
-    padding-bottom: 7px;
-  }
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion__content p {
+  color: #898082;
+  font-weight: 500;
+  font-family: Prata, serif;
+  font-size: 0.9rem;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.accordion__item.active .accordion__icon::after {
+  transform: translateX(-50%) scaleY(0);
 }
