@@ -1,6 +1,7 @@
 function init() {
 	import('./components/index.video-history.js');
 	import('./components/index.wine-categories.js');
+	import('./components/index.wine-types.js');
 }
 
 document.addEventListener("DOMContentLoaded", () => {
