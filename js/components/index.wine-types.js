@@ -29,12 +29,7 @@ function renderWineTypes(wineTypes) {
   const wineTypesHTML = [];
   for (const wineType of wineTypes) {
     const wineTypeHTML = ` 
-  <style>
-  .${wineType.name} {
-    background-image: url("${wineType.image}");
-  }
-  </style>
-  <div class="${wineType.name}">
+  <div class="${wineType.name}" style="background-image:url('${wineType.image}')">
     <div class="wine-types__innerbloc">
       <h2 class="wine-types__legend">${wineType.legend}</h2>
       <svg xmlns="http://www.w3.org/2000/svg">
