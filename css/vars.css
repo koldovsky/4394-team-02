@@ -26,4 +26,6 @@
   --section-max-width: 1200px;
   --footer-bg-color: #1a1512;
   --awards-text-color: gray;
+  --overlay-color: rgba(0, 0, 0, 0.85);
+  --transition-speed: 0.5s;
 }
