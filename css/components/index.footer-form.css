@@ -57,12 +57,19 @@
       background-color: #4949493d;
       border: none;
       border-radius: 2px;
+      padding: 12px 16px;
+
+      font-family: var(--ff-regular);
+      font-size: 16px;
+      color: var(--craft-text-color);
+      margin-top: 12px;
 
       &:focus {
         outline: auto;
         outline-color: #3b99fc;
       }
     }
+
     .footer-form__button {
       background-color: var(--craft-accent-color);
       color: var(--craft-text-color);
