@@ -14,16 +14,6 @@
   justify-self: center;
 }
 
-.wine-types__events {
-  background-image: url("../../img/wine-types/event.jpeg");
-}
-.wine-types__organic {
-  background-image: url("../../img/wine-types/organic.jpeg");
-}
-.wine-types__selected {
-  background-image: url("../../img/wine-types/selected.jpeg");
-}
-
 .wine-types__innerbloc {
   padding: 260px 40px 40px 40px;
 }

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CaliWines</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="icon" href="icons/common/favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,13 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />v
-
+    />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -84,54 +82,52 @@
         data-hx-get="index.craft-wines.partial.html"
       ></section>
       <section
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.video-history.partial.html"
-        ></section>
-        <section
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.wine-categories.partial.html"
-        ></section>
-
-        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.video-history.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wine-categories.partial.html"
+      ></section>
+      <section
         class="testimonials"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.testimonials.partial.html"
-        ></section>
-
-        <section
-          class="awards-wines"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.awards-wines.partial.html"
-        ></section>
-        <section
-          class="wines-blog"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.wines-blog.partial.html"
-        ></section>
-        <section
-          class="faq"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.faq.partial.html"
-        ></section>
-        <section
-          class="popup-basket"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.popup-basket.html"
-        ></section>
-        <section
-          class="popup-basket-empty"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.popup-basket-empty.html"
-        ></section>
-      </main>
+      ></section>
+      <section
+        class="awards-wines"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.awards-wines.partial.html"
+      ></section>
+      <section
+        class="wines-blog"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wines-blog.partial.html"
+      ></section>
+      <section
+        class="faq"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.faq.partial.html"
+      ></section>
+      <section
+        class="popup-basket"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.popup-basket.html"
+      ></section>
+      <section
+        class="popup-basket-empty"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.popup-basket-empty.html"
+      ></section>
+    </main>
     <footer class="footer">
       <section
         data-hx-trigger="load"
@@ -144,11 +140,8 @@
         data-hx-get="global.footer-nav.partial.html"
       ></div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script src="js/main.js"></script>
   </body>
 </html>
