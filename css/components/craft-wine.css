@@ -106,7 +106,7 @@
 }
 
 #cart-count {
-  background: #ff4b2b;
+  background: var(--craft-accent-color);
   color: white;
   font-size: 11px;
   border-radius: 50%;
