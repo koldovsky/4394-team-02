@@ -4,6 +4,7 @@ function init() {
   import("./components/index.wine-types.js");
   import("./components/index.faq-accordion.js");
   import("./components/index.instagram-feed.js");
+  import("./components/index.craft-wine-cart.js");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
