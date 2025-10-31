@@ -1,42 +1,39 @@
 .history {
   padding: 100px 15px;
-  min-height: 80vh;
   background-image: url("../../img/video-history/wine-history-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 
+
   .history__general-container {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 1em;
-    margin-left: 15px;
+    row-gap: 2em;
+    max-width: var(--section-max-width);
+    margin: 0 auto;
+    padding: 0 15px;
 
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
-      column-gap: 1em;
-      margin-left: 250px;
+      column-gap: 3em;
+      align-items: center;
 
       .history__container {
-        flex: 1;
-        align-items: center;
-        justify-content: baseline;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       .history__video {
-        /* flex-grow: 2;
-      flex: 2; */
+        display: flex;
         align-items: center;
-        justify-content: baseline;
+        justify-content: center;
       }
     }
 
     .history__container {
-      @media (min-width: 768px) {
-        margin-right: 200px;
-      }
-
       .history__title {
         color: var(--craft-accent-hover-color);
         font-size: 15px;
@@ -71,15 +68,19 @@
         font-size: 16px;
         text-align: left;
         font-weight: 100;
+        padding-top: 20px;
       }
 
       .history__video-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         color: var(--craft-text-color);
         font-family: var(--ff-regular);
         font-size: 15px;
         font-weight: 500;
         text-decoration: none;
-        padding: 40px 0;
+        padding: 15px 0;
 
         .video-link__arrow {
           width: 24px;
@@ -93,17 +94,28 @@
       .history__video-container {
         display: flex;
         flex-direction: column;
-        justify-content: left;
         align-items: left;
-        padding-top: 40px;
+        justify-content: left;
 
-        @media (min-width: 768px) {
-          align-items: center;
-          justify-content: center;
-          margin-top: 200px;
-          margin-left: -800px;
+        .history__video-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          cursor: pointer;
+
+          @media (min-width: 768px) {
+            align-items: center;
+          }
         }
 
+
+        .history__video-wrapper:hover .history__video-icon {
+          fill: var(--craft-accent-hover-color);
+        }
+
+        .history__video-wrapper:hover .history__video-text {
+          color: var(--craft-accent-hover-color);
+        }
 
         .history__video-icon {
           width: 50px;
