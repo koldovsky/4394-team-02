@@ -2,7 +2,7 @@
   padding: 90px 0;
   margin: 0 auto;
   max-width: 75%;
-  min-width: 85%;
+  
 
   .wine-categories__list {
     display: grid;
@@ -24,7 +24,7 @@
     }
 
     .wine-categories__container {
-      padding: 100px 150px 100px 40px;
+      padding: 60px 20px;
 
       .wine-categories__title {
         font-size: 28px;
@@ -140,7 +140,7 @@
     .wine-categories__list {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr 0.75fr;
-      margin: 50px 100px;
+      margin: 50px auto;
 
       .wine-categories__container {
         .wine-categories__title {
