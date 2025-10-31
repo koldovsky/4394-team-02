@@ -217,20 +217,32 @@
             </li>
           </ul>
           <div class="footer__lightbox" id="footer-lightbox">
-            <div class="lightbox__controls">
-              <button class="footer__lightbox-close">&times;</button>
-              <button class="footer__lightbox-zoom-in" title="Zoom in">
-                ＋
-              </button>
-              <button class="footer__lightbox-zoom-out" title="Zoom out">
-                －
-              </button>
+            <div class="footer__lightbox-controls">
+              <button
+                class="footer__lightbox-zoom-in"
+                aria-label="Zoom in"
+              ></button>
+              <button
+                class="footer__lightbox-zoom-out"
+                aria-label="Zoom out"
+              ></button>
+              <button
+                class="footer__lightbox-close"
+                aria-label="Close"
+              ></button>
             </div>
-            <button class="footer__lightbox-prev">&#10094;</button>
+            <button
+              class="footer__lightbox-prev button-icon"
+              aria-label="Previous"
+            >
+              &#10094;
+            </button>
             <div class="footer__lightbox-wrapper">
-              <img class="footer__lightbox-image" src="" alt="instagram-img" />
+              <div class="footer__lightbox-track"></div>
             </div>
-            <button class="footer__lightbox-next">&#10095;</button>
+            <button class="footer__lightbox-next button-icon" aria-label="Next">
+              &#10095;
+            </button>
           </div>
         </li>
       </ul>

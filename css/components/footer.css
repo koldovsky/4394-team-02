@@ -118,43 +118,115 @@
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.7);
       justify-content: center;
       align-items: center;
+      z-index: 1000;
 
       &.active {
         display: flex;
+        animation: fadeIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .footer__lightbox-controls {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        display: flex;
+        gap: 12px;
+        z-index: 1100;
+
+        &:hover {
+          opacity: 0.6;
+        }
+
+        button {
+          width: 32px;
+          height: 32px;
+          border: none;
+          background: transparent no-repeat center/16px;
+          cursor: pointer;
+          font-size: 2rem;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+          padding: 0;
+          opacity: 0.8;
+
+          &:hover {
+            background-color: #ffffff55;
+            transform: scale(1.2);
+            opacity: 1;
+          }
+
+          &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+          }
+
+          &.footer__lightbox-zoom-in {
+            background-image: url("../../icons/common/zoom-in-left-white.svg");
+          }
+
+          &.footer__lightbox-zoom-out {
+            background-image: url("../../icons/common/zoom-out-left-white.svg");
+          }
+
+          &.footer__lightbox-close {
+            background-image: url("../../icons/common/close-x.svg");
+            background-size: 18px;
+          }
+        }
       }
 
       .footer__lightbox-wrapper {
-        position: relative;
-        /* width: 90%;
-        max-width: 800px; */
+        width: 90%;
+        max-width: 1000px;
         overflow: hidden;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
         border-radius: 10px;
 
-        .footer__lightbox-image {
-          width: 100%;
-          border-radius: 10px;
-          transform: translateX(0);
-          transition: transform var(--transition-speed) ease, opacity 0.3s ease;
-          opacity: 1;
+        .footer__lightbox-track {
+          display: flex;
+          gap: 0;
+          transition: transform var(--transition-speed) ease;
+          will-change: transform;
 
-          &.slide-left {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
+          .footer__lightbox-image-container {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
 
-          &.slide-right {
-            transform: translateX(100%);
-            opacity: 0;
+            .footer__lightbox-image {
+              display: block;
+              max-width: 100%;
+              max-height: 100vh;
+              width: auto;
+              height: auto;
+              object-fit: contain;
+            }
           }
         }
 
-        .footer__lightbox-close,
         .footer__lightbox-prev,
         .footer__lightbox-next {
           position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
           background: none;
           border: none;
           color: white;
@@ -168,13 +240,10 @@
           }
         }
 
-        .footer__lightbox-close {
-          top: 20px;
-          right: 30px;
-        }
         .footer__lightbox-prev {
           left: 50px;
         }
+
         .footer__lightbox-next {
           right: 50px;
         }
