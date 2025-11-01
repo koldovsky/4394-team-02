@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cartCount = document.getElementById("cart-count");
   const addToCartButtons = document.querySelectorAll(".craft-wines-btn");
 
-  let cart = []; // 
+  let cart = []; //
 
   addToCartButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -20,21 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-const cartPopup = document.querySelector(".cart-popup-wrapper");
-const closeBtn = document.querySelector(".close-btn");
+  const cartPopup = document.querySelector(".cart-popup-wrapper");
+  const closeBtn = document.querySelector(".close-btn");
 
-cartIcon.addEventListener("click", () => {
-  cartPopup.classList.add("active"); 
-});
+  cartIcon.addEventListener("click", () => {
+    cartPopup.classList.add("active");
+  });
 
-
-closeBtn.addEventListener("click", () => {
-  cartPopup.classList.remove("active");
-});
-
-
-cartPopup.addEventListener("click", (e) => {
-  if (e.target === cartPopup) {
+  closeBtn.addEventListener("click", () => {
     cartPopup.classList.remove("active");
-  }
+  });
+
+  cartPopup.addEventListener("click", (e) => {
+    if (e.target === cartPopup) {
+      cartPopup.classList.remove("active");
+    }
+  });
 });
