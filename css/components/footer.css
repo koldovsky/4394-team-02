@@ -33,6 +33,7 @@
     }
 
     .footer__menu-title {
+      margin-top: 30px;
       font-family: var(--ff-title);
       font-size: 22px;
       line-height: 32px;
@@ -45,6 +46,11 @@
       background: var(--craft-accent-color);
       margin: 15px 0;
       width: 4vw;
+
+      @media (max-width: 765px) {
+        width: 10vw;
+        margin: 15px auto;
+      }
     }
 
     .footer__submenu:not(.footer__submenu-images) {
@@ -56,8 +62,13 @@
     .footer__social-list {
       margin-top: 30px;
       display: flex;
-      justify-content: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
+
+      @media (min-width: 765px) {
+        justify-content: flex-start;
+      }
 
       .footer__social-link {
         color: var(--craft-accent-color);
@@ -118,7 +129,7 @@
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.9);
       justify-content: center;
       align-items: center;
       z-index: 1000;
@@ -158,12 +169,10 @@
           font-size: 2rem;
           transition: transform 0.3s ease, opacity 0.3s ease;
           padding: 0;
-          opacity: 0.8;
 
           &:hover {
             background-color: #ffffff55;
             transform: scale(1.2);
-            opacity: 1;
           }
 
           &:disabled {
@@ -187,72 +196,92 @@
       }
 
       .footer__lightbox-wrapper {
-        width: 90%;
+        width: 100%;
         max-width: 1000px;
         overflow: hidden;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
         border-radius: 10px;
+      }
 
-        .footer__lightbox-track {
+      .footer__lightbox-track {
+        display: flex;
+        gap: 0;
+        transition: transform var(--transition-speed) ease;
+        will-change: transform;
+
+        .footer__lightbox-image-container {
+          flex: 0 0 100%;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
           display: flex;
-          gap: 0;
-          transition: transform var(--transition-speed) ease;
-          will-change: transform;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
 
-          .footer__lightbox-image-container {
-            flex: 0 0 100%;
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-
-            .footer__lightbox-image {
-              display: block;
-              max-width: 100%;
-              max-height: 100vh;
-              width: auto;
-              height: auto;
-              object-fit: contain;
-            }
+          .footer__lightbox-image {
+            display: block;
+            max-width: 100%;
+            max-height: 100vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
           }
         }
+      }
 
-        .footer__lightbox-prev,
-        .footer__lightbox-next {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background: none;
-          border: none;
-          color: white;
-          font-size: 2rem;
-          cursor: pointer;
-          user-select: none;
-          transition: opacity 0.3s ease;
+      .footer__lightbox-prev,
+      .footer__lightbox-next {
+        width: 6vw;
+        height: 9vw;
+        border: none;
+        background: transparent no-repeat center/5vw;
+        cursor: pointer;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        z-index: 1200;
 
-          &:hover {
-            opacity: 0.6;
-          }
+        @media (min-width: 765px) {
+          width: 48px;
+          height: 64px;
+          background-size: 40px;
         }
 
-        .footer__lightbox-prev {
-          left: 50px;
+        &:hover {
+          background-color: #ffffff33;
+          transform: scale(1.2);
         }
 
-        .footer__lightbox-next {
-          right: 50px;
+        &:focus {
+          outline: none;
         }
+      }
+
+      .footer__lightbox-prev {
+        background-image: url("../../icons/common/arrow-left-white.svg");
+        left: 0;
+      }
+
+      .footer__lightbox-next {
+        background-image: url("../../icons/common/arrow-right-white.svg");
+        right: 0;
       }
     }
 
-    .footer__link,
-    .footer__address {
+    .footer__address,
+    .footer__phone,
+    .footer__email {
       color: var(--regular-text-color);
+      text-decoration: none;
+    }
+
+    .footer__link {
+      color: var(--regular-text-color);
+      text-decoration: none;
 
       &:hover {
         color: var(--craft-accent-color);
