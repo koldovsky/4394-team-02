@@ -13,6 +13,7 @@
     flex-direction: column;
     text-align: center;
     border-top: 1px solid #ffffff24;
+    padding-bottom: 60px;
 
     @media (min-width: 765px) {
       flex-direction: row;
@@ -20,7 +21,6 @@
       align-items: flex-start;
       text-align: left;
       padding-top: 60px;
-      padding-bottom: 60px;
 
       .footer__menu-item:last-child {
         flex: 1 1 20%;

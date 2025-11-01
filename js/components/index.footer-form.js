@@ -1,9 +1,22 @@
 const modal = document.getElementById("contact-confirm-modal");
+const emailInput = document.querySelector(".footer-form__input");
 const openBtn = document.getElementById("open-contact-confirm-modal");
-const closeBtn = document.querySelector(".footer__form-modal-close");
-const okBtn = document.getElementById("footer__form-modal-ok-btn");
+const closeBtn = document.querySelector(".footer-form__modal-close");
+const okBtn = document.querySelector(".footer-form__modal-ok-btn");
 
 openBtn.addEventListener("click", () => {
+  console.log(emailInput);
+
+  if (!emailInput.value) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  if (!emailInput.checkValidity()) {
+    emailInput.reportValidity();
+    return;
+  }
+
   modal.classList.add("active");
   document.body.style.overflow = "hidden";
 });
