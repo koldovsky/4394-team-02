@@ -9,12 +9,40 @@
   min-height: 100vh;
 }
 
+.empty-cart-section {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: none;
+  padding: 24px 0;
+}
+
+.empty-message-container {
+  padding: 56px 0;
+}
+
+.empty-title {
+  font-size: 1.15em;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.empty-link-text {
+  font-size: 0.95em;
+  color: #555;
+}
+
 .shopping-cart-modal {
   width: 100%;
   max-width: 450px;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .cart-section {

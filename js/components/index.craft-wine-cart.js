@@ -4,12 +4,20 @@ export function initCraftCart() {
   const cartPopup = document.querySelector(".cart-popup-wrapper");
   const productList = document.querySelector(".product-list");
   const totalValue = document.querySelector(".total-value");
+  const productsSection = document.querySelector(".cart-section.products-section");
+  const summarySection = document.querySelector(".cart-section.summary-section");
+  const orderSection = document.querySelector(".cart-section.order-section");
   const emptySection = document.querySelector(".empty-cart-section");
+  const emptyMessageContainer = document.querySelector(".empty-message-container");
   const addToCartButtons = document.querySelectorAll(".craft-wines-btn");
   const closeBtn = document.querySelector(".close-btn");
 
   
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Get all sections
+  const emptyCartSection = document.querySelector(".empty-cart-section");
+  const allCartSections = document.querySelectorAll(".cart-section");
 
   renderCart();
 
@@ -37,6 +45,7 @@ export function initCraftCart() {
   cartIcon.addEventListener("click", () => {
     cartPopup.classList.add("active");
     cartIcon.classList.add("hidden");
+    document.body.style.overflow = "hidden";
   });
 
   
@@ -45,6 +54,7 @@ export function initCraftCart() {
     if (cart.length > 0) {
       cartIcon.classList.remove("hidden");
     }
+    document.body.style.overflow = "auto";
   }
   closeBtn?.addEventListener("click", closeCart);
 
@@ -62,16 +72,16 @@ export function initCraftCart() {
     cartCount.textContent = cart.length;
 
     if (cart.length === 0) {
-    
-      emptySection.style.display = "block";
-      if (productList) productList.style.display = "none";
+      // Show empty cart message and hide all cart sections
+      if (emptyCartSection) emptyCartSection.style.display = "block";
+      allCartSections.forEach(section => section.style.display = "none");
       if (totalValue) totalValue.textContent = "0 USD";
       cartIcon?.classList.add("hidden");
       return;
     } else {
-     
-      emptySection.style.display = "none";
-      if (productList) productList.style.display = "block";
+      // Show cart sections and hide empty message
+      if (emptyCartSection) emptyCartSection.style.display = "none";
+      allCartSections.forEach(section => section.style.display = "block");
       cartIcon?.classList.remove("hidden");
     }
 
