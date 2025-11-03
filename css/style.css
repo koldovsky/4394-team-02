@@ -12,6 +12,7 @@
 @import url("components/index.traditional-wine.css");
 @import url("components/index.discover-wines.css");
 @import url("components/craft-wine.css");
+@import url("components/index.product-pinot-noir.css");
 @import url("components/index.video-history.css");
 @import url("components/index.wine-categories.css");
 @import url("components/index.wines-blog.css");
@@ -22,6 +23,7 @@
 @import url("components/under-age.css");
 @import url("components/global.popup-basket.css");
 @import url("components/index.testimonials.css");
+@import url("components/index.wine-history.css");
 
 @import url("components/index.popup-basket.css");
 @import url("components/index.popup-basket-empty.css");
