@@ -25,24 +25,21 @@
       text-align: left;
     }
 
-    .event em {
+    .wine-history-date {
       color: #c8693a;
       font-size: 14px;
       display: block;
-
     }
 
-       .event h3 {
+       .wine-history-period{
       position: relative;
-      padding-bottom: 6px;
-      margin-bottom: 15px;
+      margin-top: 30px;
       font-family: "Prata", serif;
-      font-size: 27px;
+      font-size: 23px;
       color: #ffffff;
     }
 
-
-    .event p {
+    .about-wine-history {
       color: #898082;
       font-size: 16px;
       line-height: 1.6;
@@ -52,7 +49,7 @@
       display: block;
       width: 15%;
       margin-top: 1px;
-
+      margin-bottom:20px;
     }
 
     @media (max-width: 1000px) {
@@ -62,8 +59,18 @@
       }
       .event {
         max-width: 90%;
-        text-align: center;
+        text-align: left;
       }
 
     }
+
+
+
+
+
+
+
+
+
+
 
