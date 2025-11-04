@@ -15,7 +15,6 @@ export function initCraftCart() {
   
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  // Get all sections
   const emptyCartSection = document.querySelector(".empty-cart-section");
   const allCartSections = document.querySelectorAll(".cart-section");
 
@@ -72,14 +71,12 @@ export function initCraftCart() {
     cartCount.textContent = cart.length;
 
     if (cart.length === 0) {
-      // Show empty cart message and hide all cart sections
       if (emptyCartSection) emptyCartSection.style.display = "block";
       allCartSections.forEach(section => section.style.display = "none");
       if (totalValue) totalValue.textContent = "0 USD";
       cartIcon?.classList.add("hidden");
       return;
     } else {
-      // Show cart sections and hide empty message
       if (emptyCartSection) emptyCartSection.style.display = "none";
       allCartSections.forEach(section => section.style.display = "block");
       cartIcon?.classList.remove("hidden");
@@ -130,9 +127,18 @@ export function initCraftCart() {
       });
     });
 
-    const total = cart.reduce((sum, item) => sum + item.
+    const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+    if (totalValue) totalValue.textContent = `${total.toFixed(2)} USD`;
+  }
 
-price * item.qty, 0);
-    totalValue.textContent = `${total.toFixed(2)} USD`;
+  const orderForm = document.querySelector('.order-form');
+  if (orderForm) {
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      cart = [];
+      saveCart();
+      try { closeCart(); } catch (err) {}
+      window.location.href = 'index.order-success-page.partial.html';
+    });
   }
 }
