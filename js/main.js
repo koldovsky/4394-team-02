@@ -5,7 +5,7 @@ function init() {
 	import("./components/index.faq-accordion.js");
 	import("./components/index.footer-form.js");
 	import("./components/index.instagram-feed.js");
-	import("./components/index.craft-wine-cart.js");
+	import("./components/index.craft-wine-product.js");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -129,7 +129,7 @@ document.body.addEventListener("htmx:afterOnLoad", () => {
 
 document.body.addEventListener("htmx:afterSwap", (event) => {
   if (event.target.classList.contains("craft-wines")) {
-    import("./components/index.craft-wine-cart.js").then((module) => {
+    import("./components/index.craft-wine-product.js").then((module) => {
       if (module.initCraftCart) {
         module.initCraftCart(); 
       }
