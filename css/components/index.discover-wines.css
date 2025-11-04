@@ -31,6 +31,7 @@
   color: var(--accent-color);
   font-size: 16px;
   margin-bottom: 10px;
+  font-family: var(--ff-artistic);
 }
 
 .discover-wines__title {
@@ -70,7 +71,10 @@
 }
 
 .discover-wines__btn--primary:hover {
-  background: #c8693a;
+  color: aliceblue;
+  background-color: #bb600a;
+  border: 2px solid #bb600a;
+  text-decoration: none;
 }
 
 .discover-wines__btn--outline {
@@ -79,8 +83,10 @@
 }
 
 .discover-wines__btn--outline:hover {
-  background: #ffffff;
-  color: #1a1512;
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+
+  text-decoration: none;
 }
 
 /* ===== Планшет (min-width: 480px) ===== */
