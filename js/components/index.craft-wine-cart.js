@@ -138,7 +138,7 @@ export function initCraftCart() {
       cart = [];
       saveCart();
       try { closeCart(); } catch (err) {}
-      window.location.href = 'index.order-success-page.partial.html';
+      window.location.href = 'index.order-success-page.html';
     });
   }
 }
