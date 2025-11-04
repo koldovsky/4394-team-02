@@ -7,6 +7,7 @@ function init() {
 	import("./components/index.instagram-feed.js");
 	import("./components/index.craft-wine-cart.js");
 	import("./components/index.craft-product-galery.js");
+	import("./components/age_confirm.js")
 }
 
 document.addEventListener("DOMContentLoaded", () => {
