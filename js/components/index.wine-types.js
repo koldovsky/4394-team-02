@@ -2,21 +2,21 @@ const wineTypes = [
   {
     legend: "For Your Special Events",
     link: "#index.best-deal",
-    image: "../img/wine-types/event.jpeg",
+    image: "img/wine-types/event.jpeg",
     description: "We have a great collection of exclusive reserve wines.",
     name: "wine-types__events",
   },
   {
     legend: "100% Organic Wines",
     link: "#index.wine-special",
-    image: "../img/wine-types/organic.jpeg",
+    image: "img/wine-types/organic.jpeg",
     description: "Only natural wine without all kinds of additives or flavors.",
     name: "wine-types__organic",
   },
   {
     legend: "Selected Grape Varieties",
     link: "#index.wine-special",
-    image: "../img/wine-types/selected.jpeg",
+    image: "img/wine-types/selected.jpeg",
     description:
       "We produce and sell the finest wines made of the best grape varieties.",
     name: "wine-types__selected",
