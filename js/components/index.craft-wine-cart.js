@@ -135,6 +135,28 @@ export function initCraftCart() {
   if (orderForm) {
     orderForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      
+      const formData = new FormData(orderForm);
+      const customerDetails = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        comment: formData.get('comment') || ''
+      };
+
+      const orderData = {
+        orderNumber: '#' + Math.random().toString().slice(2, 8), 
+        items: cart.map(item => ({
+          name: item.name,
+          quantity: item.qty,
+          price: item.price.toFixed(2),
+          image: `././img/craft-wines/craft-wines-${item.name.toLowerCase().replace(/\s/g, "-")}.jpg`
+        })),
+        customerDetails: customerDetails
+      };
+
+      sessionStorage.setItem('orderData', JSON.stringify(orderData));
+
       cart = [];
       saveCart();
       try { closeCart(); } catch (err) {}

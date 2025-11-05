@@ -27,6 +27,7 @@
 
 @import url("components/index.popup-basket.css");
 @import url("components/index.popup-basket-empty.css");
+@import url("order-success.css");
 /* Important style */
 .container {
 	max-width: 1170px;
