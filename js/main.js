@@ -9,6 +9,7 @@ function init() {
 	import("./order-success.js");
 	import("./components/index.craft-product-galery.js");
 	import("./components/age_confirm.js")
+	import("./components/index.wines-blog.js")
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -81,3 +81,28 @@
     }
   }
 }
+
+.blog__content{
+  background: white;
+  padding: 132px 24px 64px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .blog__content-img{
+    width: 516;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .blog__content-data{
+    padding: 25px 0px 17px 0px;
+    font-size: 16px;
+  }
+
+  .blog__content-title{
+    font-family: "Prata", serif;
+    font-size: 34px;
+    font-weight: 500;
+  }
+}

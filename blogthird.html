@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaliWines</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="icons/common/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+      
+    <header
+      class="header"
+      data-hx-trigger="load"
+      data-hx-swap="innerHTML"
+      data-hx-get="global.header-nav.partial.html"
+    ></header>
+    <main class="main">
+     <section class="blog__content">
+      <img class="blog__content-img" src="img/blog/blog-img-third.jpg" alt="SecondBlog">
+      <p class="blog__content-data">2 Oct 2025</p>
+      <h1 class="blog__content-title">Tasting Notes from Hella Chenin</h1>
+      <p>You’d be hard pressed to find someone more excited than I about the ascendancy of Chenin Blanc from obscurity to—well, let’s face it—marginally well-known alternative white wine. Chenin finally seems to be having a moment. While that doesn’t mean thousands of acres are going into the ground in California (we have less than 4,000 now) nor that distributors can’t keep their Saumur Blanc in stock (we can only dream that Chenin becomes the next Sancerre), there are an awful lot more stories about Chenin Blanc in the wine press than ever before. And hopefully that will eventually translate into more bottles sold and opened.</p>
+     </section>
+    </main>
+    <footer class="footer">
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer-nav.partial.html"
+      ></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
